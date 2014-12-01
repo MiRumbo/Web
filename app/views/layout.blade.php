@@ -36,7 +36,7 @@
       </div><!-- .container -->
     </nav>
 
-@yield('slider')
+		@yield('slider')
 
 	<div class="container">
         	<h1>Mi Rumbo</h1>   
