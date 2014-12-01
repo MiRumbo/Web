@@ -39,8 +39,6 @@
 		@yield('slider')
 
 	<div class="container">
-        	<h1>Mi Rumbo</h1>   
-        	<h5>Presupuesto Participativo</h5>       
         	@yield('content')
 
 		<footer>
