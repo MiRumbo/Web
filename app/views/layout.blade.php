@@ -15,6 +15,7 @@
      	<script src="//code.jquery.com/jquery.js"></script>
      	{{ HTML::script('bootstrap/js/bootstrap.min.js') }}
      	{{ HTML::script('js/projects.js') }}
+      {{ HTML::script('js/users.js') }}
 
    </body>
 

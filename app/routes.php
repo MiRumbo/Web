@@ -14,13 +14,16 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('home');
 });
 
 Route::get('users', function()
 {
-	$users = User::all();
-    return View::make('users')->with('users', $users);
+	// Session::push('user.teams', 'developers');
+	$data = Session::all();
+	var_dump($data);
+	// $users = User::all();
+    // return View::make('users')->with('users', $users);
 });
 
 Route::get('projects', function()
@@ -30,8 +33,21 @@ Route::get('projects', function()
 
 Route::post('projects', function()
 {
+	Session::flush();
 	// $users = User::all();
  //    return View::make('users')->with('users', $users);
 	$input = Input::all();
 	var_dump($input);
+});
+
+Route::get('signup', function()
+{
+    return View::make('signup');
+});
+
+Route::get('cityhall/{id}/districts', function($id)
+{
+	$districts = District::all();
+	//var_dump($districts);
+	return Response::json($districts);
 });
