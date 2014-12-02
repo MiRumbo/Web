@@ -35,18 +35,21 @@
 
 @section('content')
 	<div class="row rumbo-mejora">
-    <h1>ÚNETE Y MEJORA TU RUMBO</h1>
+		<div class="container">
+			<h1>ÚNETE Y MEJORA TU RUMBO</h1>
 
-<ul>
-	<li>1. HAZ TU PROPUESTA</li>
-	<li>2. COLABORA Y HAZLO UN PROYECTO</li>
-	<li>3. COMPARTE TU PROYECTO</li>
-	<li>4. VOTA POR OTROS PROYECTOS</li>
-	<li>5. MONITOREA</li>
-	<li>6. ¡TU RUMBO MEJORA!</li>
-</ul>
+			<ul class="col-md-6">
+				<li>1. HAZ TU PROPUESTA</li>
+				<li>2. COLABORA Y HAZLO UN PROYECTO</li>
+				<li>3. COMPARTE TU PROYECTO</li>
+				<li>4. VOTA POR OTROS PROYECTOS</li>
+				<li>5. MONITOREA</li>
+				<li>6. ¡TU RUMBO MEJORA!</li>
+			</ul>
+		</div><!-- .container -->
 	</div><!-- .rumbo-mejora -->
 	<div class="row rumbo-proyectos">
+		<div class="container">
 	<div class="col-md-7">
           <h2 class="rumbo-heading">¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -54,9 +57,11 @@
         <div class="col-md-5">
 		<button type="button" class="btn btn-lg btn-default">UBICAR</button>
         </div>
+	</div><!-- .container -->
       </div><!-- .rumbo-proyectos -->
 
       <div class="row rumbo-rumbear">
+	<div class="container">
         <div class="col-md-7">
           <h2 class="rumbo-heading">¡QUIERO RUMBEAR!</h2>
 	  <div class="panel panel-primary">
@@ -68,10 +73,11 @@
             </div>
           </div><!-- .panel -->          
         </div>
+	</div><!-- .container -->
       </div><!-- .rumbo-rumbear -->
 
       <div class="row rumbo-rumberos">
-
+	<div class="container">
         <div class="col-lg-4">
           <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
           <h2>MI PARQUECITO</h2>
@@ -96,7 +102,7 @@
           <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
 	  <p><a class="btn btn-default" href="#" role="button">¡COMPLETADO!</a></p>
         </div><!-- /.col-lg-4 -->
-
+	</div><!-- .container -->
       </div><!-- .rumbo-rumberos -->
 
 @stop
