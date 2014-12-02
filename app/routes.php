@@ -31,68 +31,20 @@ Route::get('projects', function()
     return View::make('projects');
 });
 
-Route::post('projects', function()
+Route::post('projects/create', function()
 {
 	Session::flush();
 	$input = Input::all();
 	var_dump($input);
 });
 
-Route::get('signin', function()
-{		
-	if (Auth::check()) return Redirect::to('/');
-	return View::make('signin');	
-});
+Route::get('signin', 'UserController@getSigninView');
+Route::post('signin', 'UserController@signin');
 
-Route::post('signin', function()
-{	
-	$user = new User(Input::all());
-	if (Auth::attempt(array('email' => $user->email, 'password' => $user->password)))
-	{
-	    $response = array('hasError' => false);	
-	}
-	else
-	{
-		$response = array('hasError' => true, 'errorMessage' => 'Credenciales inválidos');	
-	}
-	return Response::json($response);
-});
+Route::get('logout', 'UserController@logout');
 
-Route::get('logout', function()
-{
-	Auth::logout();		
-	return Redirect::to('/');
-});
-
-Route::get('signup', function()
-{	
-	if(Auth::check()) {
-		return Redirect::to('/');
-	}
-	else {
-		$city_halls = CityHall::all();	
-   		return View::make('signup')->with('city_halls', $city_halls);
-	}	
-});
-
-Route::post('signup', function()
-{
-	$user = Input::all();
-	if(count(User::where('email', '=', $user['email'])->get()) == 0)
-	{
-		$noHashedPassword = $user['password'];
-		$user['password'] = Hash::make($noHashedPassword);
-		$user = User::create($user);
-		$user->hasError = false;
-		Auth::login($user);
-		return Response::json($user);
-	}
-	else
-	{
-		$error = array('hasError' => true, 'errorMessage' => 'Este correo eletrónico ya ha sido registrado');
-		return Response::json($error);
-	}
-});
+Route::get('signup', 'UserController@getSignupView');
+Route::post('signup', 'UserController@signup');
 
 Route::get('cityhall/{id}/districts', function($id)
 {

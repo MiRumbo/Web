@@ -9,7 +9,7 @@
 	<div class="col-md-6 col-md-offset-3">      
 	 	{{ Form::open(array('url' => 'signup', 'id' => 'signupForm')) }}
 			<legend>Registro de Ciudadano</legend>
-			@include('base-create-user')
+			@include('users.create')
 			<button type="submit" class="btn btn-default">Registrarse</button>
 	  	{{ Form::close() }}
    	</div>
