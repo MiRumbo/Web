@@ -34,7 +34,7 @@
 @stop
 
 @section('content')
-	<div class="row rumbo-mejora">
+	<div class="rumbo-mejora">
 		<div class="container">
 			<h2>ÚNETE Y MEJORA TU RUMBO</h2>
 
@@ -48,7 +48,7 @@
 			</ul>
 		</div><!-- .container -->
 	</div><!-- .rumbo-mejora -->
-	<div class="row rumbo-proyectos">
+	<div class="rumbo-proyectos">
 		<div class="container">
 			<h2 class="rumbo-heading">¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
 			<div class="row">
@@ -75,7 +75,7 @@
 	</div><!-- .container -->
       </div><!-- .rumbo-proyectos -->
 
-      <div class="row rumbo-rumbear">
+      <div class="rumbo-rumbear">
 	<div class="rumbo-rumbear-inner">
 	<div class="container">
           <h2 class="rumbo-heading">¡QUIERO RUMBEAR!</h2>
@@ -127,7 +127,7 @@
 	</div><!-- .rumbo-rumbear-inner -->
       </div><!-- .rumbo-rumbear -->
 
-      <div class="row rumbo-rumberos">
+      <div class="rumbo-rumberos">
 	<div class="container">
 		<h2>RUMBEROS DEL MES</h2>
         <div class="col-lg-4">
