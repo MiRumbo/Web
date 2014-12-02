@@ -73,13 +73,16 @@ CREATE TABLE IF NOT EXISTS `mi_rumbo`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `dni` VARCHAR(50) NULL,
   `name` VARCHAR(100) NOT NULL,
-  `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_at` DATETIME NOT NULL,
   `email` VARCHAR(100) NOT NULL,
   `username` VARCHAR(45) NOT NULL,
   `district_id` INT NOT NULL,
+  `updated_at` DATETIME NOT NULL,
+  `password` BINARY NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `dni_UNIQUE` (`dni` ASC),
   INDEX `fk_users_districts1_idx` (`district_id` ASC),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
   CONSTRAINT `fk_users_districts1`
     FOREIGN KEY (`district_id`)
     REFERENCES `mi_rumbo`.`districts` (`id`)
@@ -152,8 +155,9 @@ CREATE TABLE IF NOT EXISTS `mi_rumbo`.`projects` (
   `district_id` INT NOT NULL,
   `project_status_id` INT NOT NULL,
   `user_id` INT NOT NULL,
-  `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_at` DATETIME NOT NULL,
   `goals` TEXT NOT NULL,
+  `updated_at` DATETIME NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_proyectos_districts1_idx` (`district_id` ASC),
   INDEX `fk_proyectos_project_status1_idx` (`project_status_id` ASC),
