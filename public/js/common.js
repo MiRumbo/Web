@@ -1,0 +1,1 @@
+var BASE_PATH = 'http://localhost/mi-rumbo/public/';
