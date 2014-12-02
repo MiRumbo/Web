@@ -76,6 +76,7 @@
       </div><!-- .rumbo-proyectos -->
 
       <div class="row rumbo-rumbear">
+	<div class="rumbo-rumbear-inner">
 	<div class="container">
           <h2 class="rumbo-heading">¡QUIERO RUMBEAR!</h2>
 	 <div class="col-md-6 col-md-offset-3">
@@ -123,6 +124,7 @@
           </div><!-- .panel -->          
         </div>
 	</div><!-- .container -->
+	</div><!-- .rumbo-rumbear-inner -->
       </div><!-- .rumbo-rumbear -->
 
       <div class="row rumbo-rumberos">
