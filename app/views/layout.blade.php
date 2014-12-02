@@ -7,7 +7,7 @@
 	{{ HTML::style('css/common.css', array('media' => 'screen')) }}
 	{{ HTML::style('style.css', array('media' => 'screen')) }}
 
-	 <body>
+	<body>
 
 		<nav class="navbar" role="navigation">
 			<div class="container">
@@ -43,18 +43,18 @@
 
 		@yield('slider')
 
-	<div class="container">
-		@yield('content')
-		<footer>
-					<p id="copyright">&copy; 2014 Mi Rumbo O.S.C.</p>
-		</footer>
-	</div><!-- .container -->
+		<div class="container">
+	        @yield('content')
+			<footer>
+				<p id="copyright">&copy; 2014 Mi Rumbo O.S.C.</p>
+			</footer>
+		</div><!-- .container -->
 
-			<script src="//code.jquery.com/jquery.js"></script>
-			{{ HTML::script('bootstrap/js/bootstrap.min.js') }}
-			{{ HTML::script('js/common.js') }}
-			{{ HTML::script('js/projects.js') }}
-			{{ HTML::script('js/users.js') }}
+		<script src="//code.jquery.com/jquery.js"></script>
+		{{ HTML::script('bootstrap/js/bootstrap.min.js') }}
+		{{ HTML::script('js/common.js') }}
+		{{ HTML::script('js/projects.js') }}
+		{{ HTML::script('js/users.js') }}
 
 	 </body>
 
