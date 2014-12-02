@@ -129,29 +129,30 @@
 
       <div class="row rumbo-rumberos">
 	<div class="container">
+		<h2>RUMBEROS DEL MES</h2>
         <div class="col-lg-4">
           <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
-          <h2>MI PARQUECITO</h2>
+          <h3>MI PARQUECITO</h3>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
           <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
-	  <p><a class="btn btn-default" href="#" role="button">¡COMPLETADO!</a></p>
+	  <p><a class="btn btn-default category-equipo" href="#" role="button">¡COMPLETADO!</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
-          <h2>PUENTE PA TODOS</h2>
+          <h3>PUENTE PA TODOS</h3>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p class="author"><a href="#profie-author">Por: Marcela Brasil</a></p>
           <p class="local">Del. Azcapotzalco</p>
-	  <p><a class="btn btn-default" href="#" role="button">¡COMPLETADO!</a></p>
+	  <p><a class="btn btn-default category-equipo" href="#" role="button">¡COMPLETADO!</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
-          <h2>¡LUCES Y LUCES!</h2>
+          <h3>¡LUCES Y LUCES!</h3>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
           <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
-	  <p><a class="btn btn-default" href="#" role="button">¡COMPLETADO!</a></p>
+	  <p><a class="btn btn-default category-seguridade" href="#" role="button">¡COMPLETADO!</a></p>
         </div><!-- /.col-lg-4 -->
 	</div><!-- .container -->
       </div><!-- .rumbo-rumberos -->
