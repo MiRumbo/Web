@@ -26,7 +26,7 @@
 						@if (Auth::check())
 							<li><a href="#">{{ Auth::user()->name }}</a></li>
 						@else
-							<li><a href="#">Login / Registrame</a></li>
+							<li><a href="/signup">Login / Registrame</a></li>
 						@endif            
 					</ul>
 					<ul class="nav navbar-nav navbar-left">
