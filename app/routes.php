@@ -47,16 +47,15 @@ Route::get('signin', function()
 Route::post('signin', function()
 {	
 	$user = new User(Input::all());
-	// $user->password = Input::all()['password'];
 	if (Auth::attempt(array('email' => $user->email, 'password' => $user->password)))
 	{
-	    return Redirect::to('/');
+	    $response = array('hasError' => false);	
 	}
 	else
 	{
-		$error = array('hasError' => true, 'errorMessage' => 'Este correo eletrónico ya ha sido registrado');
-		return Response::json($error);
+		$response = array('hasError' => true, 'errorMessage' => 'Credenciales inválidos');	
 	}
+	return Response::json($response);
 });
 
 Route::get('logout', function()

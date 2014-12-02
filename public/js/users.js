@@ -28,7 +28,9 @@ $('#signinForm').submit(function() {
 		$.post('signin', user, function(response) {
 			if(response.hasError) {
 				alert(response.errorMessage);
-			}
+			} else {
+                window.location.replace('/');
+            }
         });
 	}
 });
@@ -44,7 +46,7 @@ $('#signupForm').submit(function() {
 			if(response.hasError) {
 				alert(response.errorMessage);
 			} else {
-				window.location.replace(BASE_PATH);
+				window.location.replace('/');
 			}
         });
 	}
