@@ -36,7 +36,7 @@
 @section('content')
 	<div class="row rumbo-mejora">
 		<div class="container">
-			<h1>ÚNETE Y MEJORA TU RUMBO</h1>
+			<h2>ÚNETE Y MEJORA TU RUMBO</h2>
 
 			<ul class="col-md-6">
 				<li>1. HAZ TU PROPUESTA</li>
@@ -50,26 +50,75 @@
 	</div><!-- .rumbo-mejora -->
 	<div class="row rumbo-proyectos">
 		<div class="container">
-	<div class="col-md-7">
-          <h2 class="rumbo-heading">¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-		<button type="button" class="btn btn-lg btn-default">UBICAR</button>
-        </div>
+			<h2 class="rumbo-heading">¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
+			<div class="row">
+<!-- FIXME -->
+<div class="form-group form-inline">	
+	<select class="form-control" id="inputCityHall" name="cityHall">
+		<option data-id="-1">-- Seleccione una delegación --</option>
+		        	<option data-id="1">Miguel Hidalgo</option>
+    	        	<option data-id="2">Cuauhtémoc</option>
+    	        	<option data-id="3">Venustiano Carranza</option>
+    	        	<option data-id="4">Coyoacán</option>
+    	        	<option data-id="5">Iztapalapa</option>
+    	        	<option data-id="6">Milpa Alta</option>
+    		</select>
+	<select class="form-control" id="inputDistrict" name="district" disabled="">
+		<option value="-1">-- Seleccione un distrito --</option>
+	</select>
+</div>	
+<!-- FIXME -->
+			</div>
+       			 <div class="row">
+       			 	<button type="button" class="btn btn-lg btn-default">UBICAR</button>
+       			 </div>
 	</div><!-- .container -->
       </div><!-- .rumbo-proyectos -->
 
       <div class="row rumbo-rumbear">
 	<div class="container">
-        <div class="col-md-7">
           <h2 class="rumbo-heading">¡QUIERO RUMBEAR!</h2>
+	 <div class="col-md-6 col-md-offset-3">
 	  <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
+              <h3 class="panel-title">Datos de tu propuesta</h3>
             </div>
             <div class="panel-body">
-<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		<div class="panel-rubro">
+			<ul>
+			 <li>EQUIPAMIENTO</li>
+			 <li>Outro</li>
+			</ul>
+		</div>
+		<div class="panel-form">
+<!-- FIXME -->
+<div class="form-group form-inline">
+	<div class="row">
+		<label for="inputName">Nombre de la propuesta</label>
+		<input class="form-control" id="inputName" name="name" type="text">
+	</div>	
+	<div class="row">
+	<select class="form-control" id="inputCityHall" name="cityHall">
+		<option data-id="-1">-- Seleccione una delegación --</option>
+		        	<option data-id="1">Miguel Hidalgo</option>
+    	        	<option data-id="2">Cuauhtémoc</option>
+    	        	<option data-id="3">Venustiano Carranza</option>
+    	        	<option data-id="4">Coyoacán</option>
+    	        	<option data-id="5">Iztapalapa</option>
+    	        	<option data-id="6">Milpa Alta</option>
+    	</select>
+	</div>
+	<div class="row">
+	<select class="form-control" id="inputDistrict" name="district" disabled="">
+		<option value="-1">-- Seleccione un distrito --</option>
+	</select>
+	</div>
+	 <div class="row">
+	 	<button type="button" class="btn btn-lg btn-default">CUÉNTANOS+</button>
+	 </div>
+</div>	
+<!-- FIXME -->
+		</div><!-- .panel-form -->
             </div>
           </div><!-- .panel -->          
         </div>
