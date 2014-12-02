@@ -7,7 +7,7 @@ $( "#inputCityHall" ).change(function() {
 	if(idCityHall < 0) {
 		$('#inputDistrict').prop('disabled', true);
 	} else {
-		$.get('http://localhost/mi-rumbo/public/cityhall/' + idCityHall +'/districts', function(data) {
+		$.get('cityhall/' + idCityHall +'/districts', function(data) {
 		 	$('#inputDistrict').prop('disabled', false);
 		 	$("#inputDistrict .district-option").remove();
 		 	for(i in data) {
