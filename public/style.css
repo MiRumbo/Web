@@ -67,6 +67,7 @@ nav a {
 .rumbo-proyectos {
 	background: #22b5bb url('images/bg3.png') top center no-repeat;
 	height: 549px;
+	padding: 2em;
 }
 
 .rumbo-proyectos h2 {
@@ -74,6 +75,21 @@ nav a {
 	font-size: 4em;
 	text-align: center;
 }
+
+.rumbo-proyectos .form-group {
+	padding-top: 6em;
+	padding-bottom: 2em;
+}
+
+.rumbo-proyectos .form-group select {
+	font-size: 1.5em;
+	height: 2em;
+}
+
+.rumbo-proyectos .button-ubicar {
+	text-align: right;
+}
+
 
 /* HOME: Rumbo Rumbear */
 

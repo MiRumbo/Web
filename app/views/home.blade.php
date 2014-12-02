@@ -50,8 +50,8 @@
 	</div><!-- .rumbo-mejora -->
 	<div class="rumbo-proyectos">
 		<div class="container">
-			<h2 class="rumbo-heading">¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
-			<div class="row">
+			<h2>¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
+			<div class="col-md-8 col-md-offset-2">
 <!-- FIXME -->
 <div class="form-group form-inline">	
 	<select class="form-control" id="inputCityHall" name="cityHall">
@@ -69,7 +69,7 @@
 </div>	
 <!-- FIXME -->
 			</div>
-       			 <div class="row">
+       			 <div class="col-md-8 col-md-offset-2 button-ubicar">
        			 	<button type="button" class="btn btn-lg btn-default">UBICAR</button>
        			 </div>
 	</div><!-- .container -->
@@ -78,7 +78,7 @@
       <div class="rumbo-rumbear">
 	<div class="rumbo-rumbear-inner">
 	<div class="container">
-          <h2 class="rumbo-heading">¡QUIERO RUMBEAR!</h2>
+          <h2>¡QUIERO RUMBEAR!</h2>
 	 <div class="col-md-6 col-md-offset-3">
 	  <div class="panel panel-primary">
             <div class="panel-heading">
