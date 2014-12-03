@@ -16,6 +16,11 @@ h1, h2, h3, h4 {
 
 /* Style header */
 
+#navheader {
+	background: #FFF;
+	transition: 0.3s;
+}
+
 #logo-mirumbo {
 	background: url('images/logo-mirumbo.png') no-repeat;
 	width: 245px;
@@ -27,19 +32,17 @@ h1, h2, h3, h4 {
 nav.navbar-fixed-top #logo-mirumbo {
 	background: url('images/icons.png') top center no-repeat;
 	width: 230px;
-	height: 50px;
-	background-size: 200px;
+	height: 60px;
+	background-size: 260px;
 	background-position: 10px 5px;
 }
 
 nav a {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
+	font-size: 1.3em;
 }
 
-#navheader {
-	background: #FFF;
-}
 
 /* HOME: Rumbo Mejora */
 
@@ -237,3 +240,21 @@ footer {
 	text-align: center;
 	height: 50px
 }
+
+/* Adjuts responsive */
+
+
+@media (max-width:768px){
+
+	.rumbo-mejora h2,
+	.rumbo-proyectos h2,
+	.rumbo-rumbear h2,
+	.rumbo-rumberos h2 { font-size: 2.5em; }
+	.rumbo-proyectos { height: 375px; background-size: auto 100%; }
+	.rumbo-proyectos .form-group { padding-top: 1em; }
+	.rumbo-rumbear .panel-title,
+	.rumbo-proyectos .form-group select { font-size: 1.3em; }
+	.panel-rubro { width: 320px; margin-left: -47px; }
+
+} /* End responsive adjusts */
+
