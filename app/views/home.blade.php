@@ -54,7 +54,7 @@
 			<div class="col-md-8 col-md-offset-2">
 <!-- FIXME -->
 <div class="form-group form-inline">	
-	<select class="form-control" id="inputCityHall" name="cityHall">
+	<select class="selectpicker" data-style="btn-primary" id="inputCityHall" name="cityHall">
 		<option data-id="-1">-- Seleccione una delegación --</option>
 		        	<option data-id="1">Miguel Hidalgo</option>
     	        	<option data-id="2">Cuauhtémoc</option>
@@ -63,7 +63,7 @@
     	        	<option data-id="5">Iztapalapa</option>
     	        	<option data-id="6">Milpa Alta</option>
     		</select>
-	<select class="form-control" id="inputDistrict" name="district" disabled="">
+	<select class="selectpicker" id="inputDistrict" name="district" disabled="">
 		<option value="-1">-- Seleccione un distrito --</option>
 	</select>
 </div>	
@@ -79,17 +79,61 @@
 	<div class="rumbo-rumbear-inner">
 	<div class="container">
           <h2>¡QUIERO RUMBEAR!</h2>
-	 <div class="col-md-6 col-md-offset-3">
+	 <div class="col-md-8 col-md-offset-2">
 	  <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title">Datos de tu propuesta</h3>
             </div>
             <div class="panel-body">
 		<div class="panel-rubro">
-			<ul>
-			 <li>EQUIPAMIENTO</li>
-			 <li>Outro</li>
-			</ul>
+<div class="tabs-rubro">
+    
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1">
+       <label for="tab-1">Obras y servicios</label>
+       
+       <div class="content">
+	Obras y servicios
+       </div> 
+   </div>
+    
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">Equipamiento</label>
+       
+       <div class="content">
+           Equipamiento
+       </div> 
+   </div>
+    
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">Infraestructura Urbana</label>
+     
+       <div class="content">
+           Infraestructura Urbana
+       </div> 
+   </div>
+
+    <div class="tab">
+       <input type="radio" id="tab-4" name="tab-group-1">
+       <label for="tab-4">Prevención del delito</label>
+
+       <div class="content">
+           Prevención del delito
+       </div>
+   </div>
+
+    <div class="tab">
+       <input type="radio" id="tab-5" name="tab-group-1">
+       <label for="tab-5">Actividades recreativas, deportivas y culturales</label>
+
+       <div class="content">
+           Actividades recreativas, deportivas y culturales
+       </div>
+   </div>
+
+</div><!-- .tabs-rubro -->
 		</div>
 		<div class="panel-form">
 <!-- FIXME -->

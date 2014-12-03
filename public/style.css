@@ -82,8 +82,12 @@ nav a {
 }
 
 .rumbo-proyectos .form-group select {
-	font-size: 1.5em;
+	font-size: 1.8em;
 	height: 2em;
+}
+
+.rumbo-proyectos #inputDistrict {
+	float: right;
 }
 
 .rumbo-proyectos .button-ubicar {
@@ -108,6 +112,73 @@ nav a {
 	font-size: 4em;
 	text-align: center;
 }
+
+.rumbo-rumbear .panel-heading {
+	background: #b31e2d;
+	text-transform: uppercase;
+	padding: 1.5em;
+}
+
+.rumbo-rumbear .panel-heading {
+        border: 7px solid #EE4E42;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-radius: 0px;
+}
+
+.rumbo-rumbear .panel-primary {
+	border: 2px solid #EE4E42;
+	border-radius: 0px;
+}
+
+.rumbo-rumbear .panel-title  {
+	font-size: 1.8em;
+}
+
+.rumbo-rumbear .panel-body {
+	padding: 3em;
+}
+
+.rumbo-rumbear .tabs-rubro {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.rumbo-rumbear .tab {
+  float: left;
+}
+.rumbo-rumbear .tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.rumbo-rumbear .tab [type=radio] {
+  display: none;   
+}
+.rumbo-rumbear .content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+.rumbo-rumbear [type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+.rumbo-rumbear [type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
 
 /* HOME: Rumberos */
 
