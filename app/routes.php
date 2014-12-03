@@ -14,7 +14,7 @@
 
 Route::get('/', function()
 {
-	return View::make('home')->with('user', 2);
+	return View::make('home');
 });
 
 Route::get('users', function()
@@ -26,17 +26,10 @@ Route::get('users', function()
     // return View::make('users')->with('users', $users);
 });
 
-Route::get('projects', function()
-{
-    return View::make('projects');
-});
+Route::get('projects/create', 'ProjectController@getCreateView');
+Route::post('projects/create', 'ProjectController@create');
 
-Route::post('projects/create', function()
-{
-	Session::flush();
-	$input = Input::all();
-	var_dump($input);
-});
+Route::get('projects/{id}', 'ProjectController@getProjectInfoView');
 
 Route::get('signin', 'UserController@getSigninView');
 Route::post('signin', 'UserController@signin');
@@ -46,8 +39,4 @@ Route::get('logout', 'UserController@logout');
 Route::get('signup', 'UserController@getSignupView');
 Route::post('signup', 'UserController@signup');
 
-Route::get('cityhall/{id}/districts', function($id)
-{
-	$districts = District::where('city_hall_id', '=', $id)->get();
-	return Response::json($districts);
-});
+Route::get('cityhall/{id}/districts', 'LocationController@getDistrictsByCityHall');
