@@ -85,57 +85,7 @@
               <h3 class="panel-title">Datos de tu propuesta</h3>
             </div>
             <div class="panel-body">
-		<div class="panel-rubro">
-<div class="tabs-rubro">
-    
-   <div class="tab">
-       <input type="radio" id="tab-1" name="tab-group-1">
-       <label for="tab-1">Obras y servicios</label>
-       
-       <div class="content">
-	Obras y servicios
-       </div> 
-   </div>
-    
-   <div class="tab">
-       <input type="radio" id="tab-2" name="tab-group-1">
-       <label for="tab-2">Equipamiento</label>
-       
-       <div class="content">
-           Equipamiento
-       </div> 
-   </div>
-    
-    <div class="tab">
-       <input type="radio" id="tab-3" name="tab-group-1">
-       <label for="tab-3">Infraestructura Urbana</label>
-     
-       <div class="content">
-           Infraestructura Urbana
-       </div> 
-   </div>
-
-    <div class="tab">
-       <input type="radio" id="tab-4" name="tab-group-1">
-       <label for="tab-4">Prevención del delito</label>
-
-       <div class="content">
-           Prevención del delito
-       </div>
-   </div>
-
-    <div class="tab">
-       <input type="radio" id="tab-5" name="tab-group-1">
-       <label for="tab-5">Actividades recreativas, deportivas y culturales</label>
-
-       <div class="content">
-           Actividades recreativas, deportivas y culturales
-       </div>
-   </div>
-
-</div><!-- .tabs-rubro -->
-		</div>
-		<div class="panel-form">
+		<div class="panel-form col-md-6">
 <!-- FIXME -->
 <div class="form-group form-inline">
 	<div class="row">
@@ -164,6 +114,54 @@
 </div>	
 <!-- FIXME -->
 		</div><!-- .panel-form -->
+		<div class="panel-rubro col-md-6">
+		<h4>RUBRO</h4>
+		<div class="tabs-rubro">
+		    
+		   <div class="tab">
+		       <input type="radio" id="tab-1" name="tab-group-1">
+		       <label for="tab-1" id="icon-obras">Obras y servicios</label>
+		       <div class="content-rumbear content-obras">
+			Obras y servicios
+		       </div> 
+		   </div>
+		    
+		   <div class="tab">
+		       <input type="radio" id="tab-2" name="tab-group-1">
+		       <label for="tab-2" id="icon-equipamiento">Equipamiento</label>
+		       <div class="content-rumbear content-equipamiento">
+		           Equipamiento
+		       </div> 
+		   </div>
+		    
+		    <div class="tab">
+		       <input type="radio" id="tab-3" name="tab-group-1">
+		       <label for="tab-3" id="icon-infraestructura">Infraestructura Urbana</label>
+		       <div class="content-rumbear content-infraestructura">
+		           Infraestructura Urbana
+		       </div> 
+		   </div>
+		
+		    <div class="tab">
+		       <input type="radio" id="tab-4" name="tab-group-1">
+		       <label for="tab-4" id="icon-prevencion">Prevención del delito</label>
+		       <div class="content-rumbear content-prevencion">
+		           Prevención del delito
+		       </div>
+		   </div>
+		
+		    <div class="tab">
+		       <input type="radio" id="tab-5" name="tab-group-1">
+		       <label for="tab-5" id="icon-actividades">Actividades recreativas, deportivas y culturales</label>
+		       <div class="content-rumbear content-actividades">
+		           Actividades recreativas, deportivas y culturales
+		       </div>
+		   </div>
+		
+		<div class="content-rumbear content-null">Selecione un rubro</div>
+		
+		</div><!-- .tabs-rubro -->
+		</div><!--- .panel-rubro -->
             </div>
           </div><!-- .panel -->          
         </div>
