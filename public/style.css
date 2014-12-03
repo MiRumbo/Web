@@ -14,6 +14,106 @@ h1, h2, h3, h4 {
 	font-weight: bold;
 }
 
-a {
+/* Style header */
+
+#logo-mirumbo {
+	background: url('images/logo-mirumbo.png') no-repeat;
+	width: 245px;
+	height: 175px;
+	text-indent: -1000px;
+	display: block;
+}
+
+nav a {
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* HOME: Rumbo Mejora */
+
+.rumbo-mejora {
+	background: #F5F5F5;
+	padding: 2em;
+}
+
+.rumbo-mejora h2 {
+	font-size: 4em;
+	text-align: center;
+	color: #2b3985;
+	margin: 0.5em;
+}
+
+.rumbo-mejora ul {
+	list-style: none;
+}
+
+.rumbo-mejora li {
+	color: #1C75B1;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.8em;
+	margin-bottom: 0.3em;
+	padding-left: 2em;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.rumbo-mejora li:hover {
+	color: #FFF;
+	background: #ed5c1b;
+}
+
+/* HOME: Rumbo Proyectos */
+
+.rumbo-proyectos {
+	background: #22b5bb url('images/bg3.png') top center no-repeat;
+	height: 549px;
+}
+
+.rumbo-proyectos h2 {
+	color: #FFF;
+	font-size: 4em;
+	text-align: center;
+}
+
+/* HOME: Rumbo Rumbear */
+
+.rumbo-rumbear {
+	background: #ee4e42 url('images/hands.png') top left no-repeat;
+	height: 518px;
+}
+
+.rumbo-rumbear-inner {
+	background: url('images/hands.png') bottom right no-repeat;
+	height: 518px;
+}
+
+.rumbo-rumbear h2 {
+	color: #FFF;
+	font-size: 4em;
+	text-align: center;
+}
+
+/* HOME: Rumberos */
+
+.rumbo-rumberos {
+	background: #ec891e;
+}
+
+.rumbo-rumberos h2 {
+        color: #FFF;
+        font-size: 4em;
+        text-align: center;
+}
+
+/* Footer style */
+
+footer {
+	background: #510f3d url('images/footer.png') bottom center no-repeat;
+	min-height: 450px;
+	color: #FFF;
+}
+
+#copyright {
+	text-align: center;
+	height: 50px
 }

@@ -42,12 +42,12 @@
 
 		@yield('slider')
 
-		<div class="container">
+		<div id="content">
 	        @yield('content')
 			<footer>
 				<p id="copyright">&copy; 2014 Mi Rumbo O.S.C.</p>
 			</footer>
-		</div><!-- .container -->
+		</div><!-- #content -->
 
 		<script src="//code.jquery.com/jquery.js"></script>
 		{{ HTML::script('bootstrap/js/bootstrap.min.js') }}

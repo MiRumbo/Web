@@ -34,69 +34,127 @@
 @stop
 
 @section('content')
-	<div class="row rumbo-mejora">
-    <h1>ÚNETE Y MEJORA TU RUMBO</h1>
+	<div class="rumbo-mejora">
+		<div class="container">
+			<h2>ÚNETE Y MEJORA TU RUMBO</h2>
 
-<ul>
-	<li>1. HAZ TU PROPUESTA</li>
-	<li>2. COLABORA Y HAZLO UN PROYECTO</li>
-	<li>3. COMPARTE TU PROYECTO</li>
-	<li>4. VOTA POR OTROS PROYECTOS</li>
-	<li>5. MONITOREA</li>
-	<li>6. ¡TU RUMBO MEJORA!</li>
-</ul>
+			<ul class="col-md-6">
+				<li>1. HAZ TU PROPUESTA</li>
+				<li>2. COLABORA Y HAZLO UN PROYECTO</li>
+				<li>3. COMPARTE TU PROYECTO</li>
+				<li>4. VOTA POR OTROS PROYECTOS</li>
+				<li>5. MONITOREA</li>
+				<li>6. ¡TU RUMBO MEJORA!</li>
+			</ul>
+		</div><!-- .container -->
 	</div><!-- .rumbo-mejora -->
-	<div class="row rumbo-proyectos">
-	<div class="col-md-7">
-          <h2 class="rumbo-heading">¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-		<button type="button" class="btn btn-lg btn-default">UBICAR</button>
-        </div>
+	<div class="rumbo-proyectos">
+		<div class="container">
+			<h2 class="rumbo-heading">¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
+			<div class="row">
+<!-- FIXME -->
+<div class="form-group form-inline">	
+	<select class="form-control" id="inputCityHall" name="cityHall">
+		<option data-id="-1">-- Seleccione una delegación --</option>
+		        	<option data-id="1">Miguel Hidalgo</option>
+    	        	<option data-id="2">Cuauhtémoc</option>
+    	        	<option data-id="3">Venustiano Carranza</option>
+    	        	<option data-id="4">Coyoacán</option>
+    	        	<option data-id="5">Iztapalapa</option>
+    	        	<option data-id="6">Milpa Alta</option>
+    		</select>
+	<select class="form-control" id="inputDistrict" name="district" disabled="">
+		<option value="-1">-- Seleccione un distrito --</option>
+	</select>
+</div>	
+<!-- FIXME -->
+			</div>
+       			 <div class="row">
+       			 	<button type="button" class="btn btn-lg btn-default">UBICAR</button>
+       			 </div>
+	</div><!-- .container -->
       </div><!-- .rumbo-proyectos -->
 
-      <div class="row rumbo-rumbear">
-        <div class="col-md-7">
+      <div class="rumbo-rumbear">
+	<div class="rumbo-rumbear-inner">
+	<div class="container">
           <h2 class="rumbo-heading">¡QUIERO RUMBEAR!</h2>
+	 <div class="col-md-6 col-md-offset-3">
 	  <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
+              <h3 class="panel-title">Datos de tu propuesta</h3>
             </div>
             <div class="panel-body">
-<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		<div class="panel-rubro">
+			<ul>
+			 <li>EQUIPAMIENTO</li>
+			 <li>Outro</li>
+			</ul>
+		</div>
+		<div class="panel-form">
+<!-- FIXME -->
+<div class="form-group form-inline">
+	<div class="row">
+		<label for="inputName">Nombre de la propuesta</label>
+		<input class="form-control" id="inputName" name="name" type="text">
+	</div>	
+	<div class="row">
+	<select class="form-control" id="inputCityHall" name="cityHall">
+		<option data-id="-1">-- Seleccione una delegación --</option>
+		        	<option data-id="1">Miguel Hidalgo</option>
+    	        	<option data-id="2">Cuauhtémoc</option>
+    	        	<option data-id="3">Venustiano Carranza</option>
+    	        	<option data-id="4">Coyoacán</option>
+    	        	<option data-id="5">Iztapalapa</option>
+    	        	<option data-id="6">Milpa Alta</option>
+    	</select>
+	</div>
+	<div class="row">
+	<select class="form-control" id="inputDistrict" name="district" disabled="">
+		<option value="-1">-- Seleccione un distrito --</option>
+	</select>
+	</div>
+	 <div class="row">
+	 	<button type="button" class="btn btn-lg btn-default">CUÉNTANOS+</button>
+	 </div>
+</div>	
+<!-- FIXME -->
+		</div><!-- .panel-form -->
             </div>
           </div><!-- .panel -->          
         </div>
+	</div><!-- .container -->
+	</div><!-- .rumbo-rumbear-inner -->
       </div><!-- .rumbo-rumbear -->
 
-      <div class="row rumbo-rumberos">
-
+      <div class="rumbo-rumberos">
+	<div class="container">
+		<h2>RUMBEROS DEL MES</h2>
         <div class="col-lg-4">
           <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
-          <h2>MI PARQUECITO</h2>
+          <h3>MI PARQUECITO</h3>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
           <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
-	  <p><a class="btn btn-default" href="#" role="button">¡COMPLETADO!</a></p>
+	  <p><a class="btn btn-default category-equipo" href="#" role="button">¡COMPLETADO!</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
-          <h2>PUENTE PA TODOS</h2>
+          <h3>PUENTE PA TODOS</h3>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p class="author"><a href="#profie-author">Por: Marcela Brasil</a></p>
           <p class="local">Del. Azcapotzalco</p>
-	  <p><a class="btn btn-default" href="#" role="button">¡COMPLETADO!</a></p>
+	  <p><a class="btn btn-default category-equipo" href="#" role="button">¡COMPLETADO!</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
-          <h2>¡LUCES Y LUCES!</h2>
+          <h3>¡LUCES Y LUCES!</h3>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
           <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
-	  <p><a class="btn btn-default" href="#" role="button">¡COMPLETADO!</a></p>
+	  <p><a class="btn btn-default category-seguridade" href="#" role="button">¡COMPLETADO!</a></p>
         </div><!-- /.col-lg-4 -->
-
+	</div><!-- .container -->
       </div><!-- .rumbo-rumberos -->
 
 @stop
