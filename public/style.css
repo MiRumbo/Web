@@ -103,6 +103,8 @@ nav a {
 	padding-bottom: 2em;
 }
 
+.form-group .row { margin-bottom: 15px; }
+
 .rumbo-proyectos .form-group select {
 	font-size: 1.8em;
 	height: 2em;
