@@ -21,7 +21,7 @@
 				</div><!-- .navbar-header -->
 
 				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-user navbar-right">
 						@if (Auth::check())
 							<li><a href="#">{{ Auth::user()->name }}</a></li>
 						@else
