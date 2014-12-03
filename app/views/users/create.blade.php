@@ -30,3 +30,7 @@
 		<option value='-1'>-- Seleccione un distrito --</option>
 	</select>
 </div>
+
+@section('scripts')
+	{{ HTML::script('js/users.js') }}
+@stop

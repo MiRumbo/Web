@@ -22,7 +22,3 @@
    </div>
 </div>    
 @stop
-
-@section('scripts')
-	{{ HTML::script('js/users.js') }}
-@stop

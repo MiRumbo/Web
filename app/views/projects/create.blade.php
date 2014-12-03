@@ -7,42 +7,63 @@
 @section('content')
 <div class="row center">
    <div class="col-md-4 col-md-offset-4">      
-      {{ Form::open(array('url' => 'projects', 'id' => 'createProject')) }}
-         <legend>Crear una propuesta de proyecto</legend>
+      {{ Form::open(array('url' => 'projects/create', 'id' => 'createProject', 'files' => true)) }}
+         <legend>Datos de tu propuesta</legend>
          <div class="form-group">
-            <label for="inputTitle">Titulo del proyecto</label>
-            <input type="text" class="form-control" id="inputTitle" name="title" placeholder="Ej: Talleres culturales">
+            <label for="inputTitle">Nombre de la propuesta</label>
+            <input type="text" class="form-control" id="inputTitle" name="title" placeholder="Ej: Calle Emiliano Zapata más limpia">
          </div>
          <div class="form-group">
-            <label for="inputDescription">Descripción</label>
-            <textarea class="form-control" id="inputDescription" rows="5" placeholder="Ej: Capacitaciones gratuitas para el desarrollo de actividades artísticas y recreativas en instituciones barriales."></textarea>
-         </div>
-         <div class="form-group">
-            <label for="inputCost">Costo aproximado (Pesos)</label>
-            <input type="number" min="1" class="form-control" id="inputCost" placeholder="Ej: 40">
-         </div>
-         <div class="form-group">
-            <label for="inputCategory">Category</label>
-            <select class="form-control" id="inputCategory">
-               <option>-- Seleccione una categoría --</option>
-               <option>Obras y servicios</option>
-               <option>Equipamiento</option>
-               <option>Infraestructura urbana</option>
-               <option>Prevención del delito</option>
-               <option>Actividades recreativas, deportivas y culturales</option>
+            <label for="inputCityHall">Delegación</label>
+            <select class="form-control" id="inputCityHall" name="cityHall">
+               <option data-id="-1">-- Seleccione una delegación --</option>
+               @foreach($city_halls as $city_hall)
+                  <option data-id="{{ $city_hall->id }}">{{ $city_hall->city_hall }}</option>
+               @endforeach
             </select>
          </div>
          <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" id="exampleInputFile">
+            <label for="inputDistrict">Colonia</label>
+            <select class="form-control" id="inputDistrict" name="district_id" disabled>
+               <option value='-1'>-- Seleccione un distrito --</option>
+            </select>
          </div>
-         <h4>Información personal (Opcional)</h4>
          <div class="form-group">
-            <label for="inputName">Nombre Completo</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Ej: Mauricio Muñoz Chaves">
+            <label for="inputProblem">Problema</label>
+            <textarea class="form-control" id="inputProblem" name="problem" rows="5" placeholder="Ej: En el parque público de mi colonia hay mucha basura."></textarea>
+         </div>
+         <div class="form-group">
+            <label for="inputSolution">Solución</label>
+            <textarea class="form-control" id="inputSolution" name="solution" rows="5" placeholder="Ej: Instalar 6 contenedores de separación de basura."></textarea>
+         </div>
+         <div class="form-group">
+            <label for="inputCategory">Rubro</label>
+               <select class="form-control" id="inputCategories" name="category_id">
+                  <option data-id="-1">-- Seleccione un rubro --</option>
+                  @foreach($categories as $category)
+                     <option data-id="{{ $category->id }}">{{ $category->category }}</option>
+                  @endforeach
+               </select>
+         </div>
+         <div class="form-group">
+            <label for="inputCost">Costo aproximado en pesos (opcional)</label>
+            <input type="number" min="1" class="form-control" id="inputCost"  name="cost" placeholder="Ej: 750000">
+         </div>
+         <div class="form-group">
+            <label for="inputBeneficiaries">Beneficiarios (opcional)</label>
+            <textarea class="form-control" id="inputBeneficiaries"  name="beneficiaries" rows="5" placeholder="Ej: Vecinos de la colonia."></textarea>
+         </div>         
+         <div class="form-group">
+            <label for="inputPhoto">Foto (opcional)</label>
+            <input type="file" id="inputPhoto" name="photo" accept="image/*">
          </div>
          <button type="submit" class="btn btn-default">Submit</button>
       {{ Form::close() }}
    </div>
 </div>
+@stop
+
+@section('scripts')   
+   {{ HTML::script('js/projects.js') }}
+   {{ HTML::script('//oss.maxcdn.com/jquery.form/3.50/jquery.form.min.js') }}
 @stop
