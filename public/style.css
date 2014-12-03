@@ -142,7 +142,6 @@ nav a {
 
 .rumbo-rumbear .tabs-rubro {
   position: relative;   
-  min-height: 200px; /* This part sucks */
   clear: both;
   margin: 25px 0;
 }
