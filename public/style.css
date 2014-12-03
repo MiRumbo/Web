@@ -24,8 +24,21 @@ h1, h2, h3, h4 {
 	display: block;
 }
 
+nav.navbar-fixed-top #logo-mirumbo {
+	background: url('images/icons.png') top center no-repeat;
+	width: 230px;
+	height: 50px;
+	background-size: 200px;
+	background-position: 10px 5px;
+}
+
 nav a {
 	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+}
+
+#navheader {
+	background: #FFF;
 }
 
 /* HOME: Rumbo Mejora */

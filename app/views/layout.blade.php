@@ -8,7 +8,7 @@
 
 	<body>
 
-		<nav class="navbar" role="navigation">
+		<nav class="navbar" role="navigation" id="navheader">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
