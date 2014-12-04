@@ -120,7 +120,7 @@
 		    
 		   <div class="tab">
 		       <input type="radio" id="tab-1" name="tab-group-1">
-		       <label for="tab-1" id="icon-obras">Obras y servicios</label>
+		       <label for="tab-1" class="icons icon-obras">Obras y servicios</label>
 		       <div class="content-rumbear content-obras">
 			Obras y servicios
 		       </div> 
@@ -128,7 +128,7 @@
 		    
 		   <div class="tab">
 		       <input type="radio" id="tab-2" name="tab-group-1">
-		       <label for="tab-2" id="icon-equipamiento">Equipamiento</label>
+		       <label for="tab-2" class="icons icon-equipamiento">Equipamiento</label>
 		       <div class="content-rumbear content-equipamiento">
 		           Equipamiento
 		       </div> 
@@ -136,7 +136,7 @@
 		    
 		    <div class="tab">
 		       <input type="radio" id="tab-3" name="tab-group-1">
-		       <label for="tab-3" id="icon-infraestructura">Infraestructura Urbana</label>
+		       <label for="tab-3" class="icons icon-infraestructura">Infraestructura Urbana</label>
 		       <div class="content-rumbear content-infraestructura">
 		           Infraestructura Urbana
 		       </div> 
@@ -144,7 +144,7 @@
 		
 		    <div class="tab">
 		       <input type="radio" id="tab-4" name="tab-group-1">
-		       <label for="tab-4" id="icon-prevencion">Prevención del delito</label>
+		       <label for="tab-4" class="icons icon-prevencion">Prevención del delito</label>
 		       <div class="content-rumbear content-prevencion">
 		           Prevención del delito
 		       </div>
@@ -152,7 +152,7 @@
 		
 		    <div class="tab">
 		       <input type="radio" id="tab-5" name="tab-group-1">
-		       <label for="tab-5" id="icon-actividades">Actividades recreativas, deportivas y culturales</label>
+		       <label for="tab-5" class="icons icon-actividades">Actividades recreativas, deportivas y culturales</label>
 		       <div class="content-rumbear content-actividades">
 		           Actividades recreativas, deportivas y culturales
 		       </div>
@@ -172,30 +172,42 @@
       <div class="rumbo-rumberos">
 	<div class="container">
 		<h2>RUMBEROS DEL MES</h2>
-        <div class="col-lg-4">
-          <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
+        <div class="col-lg-4 item-proyecto">
+          <img class="thumb-proyecto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito">
           <h3>MI PARQUECITO</h3>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
-          <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
-	  <p><a class="btn btn-default category-equipo" href="#" role="button">¡COMPLETADO!</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
+		<div class="content-proyecto">
+        	  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        	  <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
+        	  <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
+		  <div class="status-proyecto">
+			<a href="/proyecto/14"><i class="icons icon-obras"></i>¡COMPLETADO!</a>
+		  </div>
+        	</div>
+	</div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 item-proyecto">
+          <img class="thumb-proyecto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito">
           <h3>PUENTE PA TODOS</h3>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p class="author"><a href="#profie-author">Por: Marcela Brasil</a></p>
-          <p class="local">Del. Azcapotzalco</p>
-	  <p><a class="btn btn-default category-equipo" href="#" role="button">¡COMPLETADO!</a></p>
+		<div class="content-proyecto">
+        	  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        	  <p class="author"><a href="#profie-author">Por: Marcela Brasil</a></p>
+        	  <p class="local">Del. Azcapotzalco</p>
+		  <div class="status-proyecto">
+			<a href="/proyecto/14"><i class="icons icon-obras"></i>¡COMPLETADO!</a>
+		  </div>
+		</div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito" style="width: 140px; height: 140px;">
+        <div class="col-lg-4 item-proyecto">
+          <img class="thumb-proyecto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito">
           <h3>¡LUCES Y LUCES!</h3>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
-          <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
-	  <p><a class="btn btn-default category-seguridade" href="#" role="button">¡COMPLETADO!</a></p>
-        </div><!-- /.col-lg-4 -->
+		<div class="content-proyecto">
+        	  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        	  <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
+        	  <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
+		  <div class="status-proyecto">
+			<a href="/proyecto/14"><i class="icons icon-equipamiento"></i>¡COMPLETADO!</a>
+		  </div>
+        	</div>
+	</div><!-- /.col-lg-4 -->
 	</div><!-- .container -->
       </div><!-- .rumbo-rumberos -->
 
