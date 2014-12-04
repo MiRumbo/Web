@@ -177,7 +177,6 @@ nav a {
 	width: 55px;
 	height: 55px;
 	text-indent: -2000px;
-	background: url('images/icons.png') bottom left no-repeat;
 }
 
 .rumbo-rumbear .tab [type=radio] {
@@ -200,19 +199,28 @@ nav a {
 
 .content-null { color: #DFDFDF; }
 
-#icon-obras { background-position: -55px bottom; }
+/* Icons */
+.icons {
+	display: block;
+        width: 55px;
+        height: 55px;
+	float: left;
+        background: url('images/icons.png') bottom left no-repeat;
+}
+
+.icon-obras { background-position: -55px bottom; }
 .content-obras { background: #f0a540; }
 
-#icon-equipamiento { background-position: 0px bottom; }
+.icon-equipamiento { background-position: 0px bottom; }
 .content-equipamiento { background: #cf1c5c; }
 
-#icon-infraestructura { background-position: -165px bottom; }
+.icon-infraestructura { background-position: -165px bottom; }
 .content-infraestructura { background: #1c75b1; }
 
-#icon-prevencion { background-position: -111px bottom; }
+.icon-prevencion { background-position: -111px bottom; }
 .content-prevencion { background: #2e3187; }
 
-#icon-actividades { background-position: -222px bottom; }
+.icon-actividades { background-position: -222px bottom; }
 .content-actividades { background: #662d86; line-height: 1em; }
 
 .rumbo-rumbear [type=radio]:checked ~ label {
@@ -228,6 +236,7 @@ nav a {
 
 .rumbo-rumberos {
 	background: #ec891e;
+	padding-bottom: 2em;
 }
 
 .rumbo-rumberos h2 {
@@ -235,6 +244,51 @@ nav a {
         font-size: 4em;
         text-align: center;
 }
+
+/* Proyectos item */
+
+.item-proyecto {
+	text-align: center;
+	line-height: 1em;
+}
+
+.item-proyecto h3 {
+	text-align: center;
+	text-transform: uppercase;
+	background: #31b596;
+	color: #FFF;
+	padding: 0.3em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+.thumb-proyecto {
+	width: 250px;
+	height: 250px;
+}
+.content-proyecto {
+	text-align: justify;
+	background: #FFF;
+	margin: 0 auto;
+	width: 250px;
+}
+.content-proyecto p {
+	padding: 0.5em 1em 0.5em 1em;
+	margin: 0px;
+}
+.status-proyecto {
+	clear: both;
+	width: 100%;
+	font-size: 1.5em;
+	background: #545454;
+	font-weight: bold;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+.status-proyecto a { color: #FFF; text-decoration: none; }
+.status-proyecto a:hover { color: rgba(245, 251, 160, 1); }
 
 /* Footer style */
 
