@@ -39,6 +39,7 @@ nav.navbar-fixed-top #logo-mirumbo {
 }
 
 .navbar-nav { margin-top: 120px; }
+.navbar-user { margin-top: 5px; }
 nav.navbar-fixed-top .navbar-nav { margin-top: 5px; }
 #navheader .navbar-form { clear: right; }
 nav.navbar-fixed-top .navbar-form { clear: none !important; }
@@ -46,7 +47,7 @@ nav.navbar-fixed-top .navbar-form { clear: none !important; }
 nav a {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 

@@ -48,6 +48,7 @@
 			</ul>
 		</div><!-- .container -->
 	</div><!-- .rumbo-mejora -->
+	<a name="QueHay"></a>
 	<div class="rumbo-proyectos">
 		<div class="container">
 			<h2>¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
@@ -74,7 +75,7 @@
        			 </div>
 	</div><!-- .container -->
       </div><!-- .rumbo-proyectos -->
-
+	<a name="QuieroRumbear"></a>
       <div class="rumbo-rumbear">
 	<div class="rumbo-rumbear-inner">
 	<div class="container">
