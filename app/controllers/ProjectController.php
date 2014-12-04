@@ -41,17 +41,44 @@ class ProjectController extends BaseController {
 		return Response::json($project);
 	}
 
+	public function getProjectQuery()
+	{
+		$query = DB::table('projects')
+				->select('title', 'problem', 'solution', 'cost', 'beneficiaries', 
+					'city_hall', 'district', 'category', 'resource', 'status', 'username')
+				->join('districts', 'districts.id', '=', 'district_id')
+				->join('city_halls', 'city_halls.id', '=', 'city_hall_id')
+	            ->join('projects_categories', 'projects.id', '=', 'projects_categories.project_id')
+	            ->join('categories', 'categories.id', '=', 'category_id')
+	            ->leftJoin('projects_media', 'projects.id', '=', 'projects_media.project_id')
+	            ->join('projects_statuses', 'projects_statuses.id', '=', 'project_status_id')
+	            ->join('users', 'users.id', '=', 'user_id');
+	    return $query;
+	}
+
 	public function getProjectInfoView($id)
 	{
-		$project = Project::find($id);
-		$project_category = ProjectCategory::where('project_id', '=', $project->id)->get()->first();
-		$project->category = Category::find($project_category->category_id);
-		$project_photo = ProjectMedia::where('project_id', '=', $project->id)->get()->first(); 
-		$project->photo = $project_photo != null ? $project_photo->resource : 'default.png';
-		$project->district = District::find($project->district_id);
-		$project->city_hall = CityHall::find($project->district->city_hall_id);
-		$project->status = ProjectStatus::find($project->project_status_id);
+		$project = $this->getProjectQuery()->where('projects.id', '=', $id)->first();
+		$project->resource = $project->resource != null ? $project->resource : 'default.png';
 		return View::make('projects.info')->with('project', $project);
+	}
+
+	public function getProjectsView()
+	{
+		if(Input::get('d') != null)
+		{
+			$projects = $this->getProjectQuery()->where('projects.district_id', '=', Input::get('d'))->get();
+		}
+		else if(Input::get('ch') != null)
+		{
+			$projects = $this->getProjectQuery()->where('city_hall_id', '=', Input::get('ch'))->get();
+		}
+		else
+		{
+			$projects = $this->getProjectQuery()->get();
+		}
+
+		var_dump($projects);
 	}
 
 }

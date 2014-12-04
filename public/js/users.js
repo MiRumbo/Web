@@ -1,3 +1,5 @@
+retrieveDistricts('#inputCityHall', '#inputDistrict');
+
 $('#signinForm').submit(function() {
 	event.preventDefault();
 	// Validate data
@@ -41,7 +43,7 @@ function validateSigninForm() {
         return null;
     }
     if (!validatePassword(password)) {
-        alert('Invalid password');
+        alert('Invalid password. Min 8 characters');
         return null;
     }
 
@@ -108,12 +110,12 @@ function validateUsername(username) {
 };
 
 function validatePassword(password) {
-    if (password.length < 1) return false;
+    if (password.length < 8) return false;
     var repeatedPassword = $('#inputConfirmPassword').length > 0 ?
         $('#inputConfirmPassword').val() : password
     return password == repeatedPassword;
 };
 
 function validateDistrict(idDistrict) {
-    return idDistrict >= 0;
+    return idDistrict != '';
 };

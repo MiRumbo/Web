@@ -21,13 +21,13 @@
 <label for="inputLocation">Residencia</label>
 <div class="form-group form-inline">	
 	<select class="form-control" id="inputCityHall" name="cityHall">
-		<option data-id="-1">-- Seleccione una delegación --</option>
+		<option value="">-- Seleccione una delegación --</option>
 		@foreach($city_halls as $city_hall)
-        	<option data-id="{{ $city_hall->id }}">{{ $city_hall->city_hall }}</option>
+        	<option value="{{ $city_hall->id }}">{{ $city_hall->city_hall }}</option>
     	@endforeach
 	</select>
 	<select class="form-control" id="inputDistrict" name="district" disabled>
-		<option value='-1'>-- Seleccione un distrito --</option>
+		<option value="">-- Seleccione un distrito --</option>
 	</select>
 </div>
 

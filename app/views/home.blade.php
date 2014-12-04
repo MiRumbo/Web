@@ -58,23 +58,20 @@
 			<div class="col-md-8 col-md-offset-2">
 <!-- FIXME -->
 <div class="form-group form-inline">	
-	<select class="selectpicker" data-style="btn-primary" id="inputCityHall" name="cityHall">
-		<option data-id="-1">-- Seleccione una delegación --</option>
-		        	<option data-id="1">Miguel Hidalgo</option>
-    	        	<option data-id="2">Cuauhtémoc</option>
-    	        	<option data-id="3">Venustiano Carranza</option>
-    	        	<option data-id="4">Coyoacán</option>
-    	        	<option data-id="5">Iztapalapa</option>
-    	        	<option data-id="6">Milpa Alta</option>
-    		</select>
-	<select class="selectpicker" id="inputDistrict" name="district" disabled="">
-		<option value="-1">-- Seleccione un distrito --</option>
+	<select class="selectpicker" data-style="btn-primary" id="inputCityHallSearch" name="cityHall">
+		<option value="">-- Seleccione una delegación --</option>
+       	@foreach($city_halls as $city_hall)
+          	<option value="{{ $city_hall->id }}">{{ $city_hall->city_hall }}</option>
+       	@endforeach
+    </select>
+	<select class="selectpicker" id="inputDistrictSearch" name="district" disabled>
+		<option value="">-- Seleccione un distrito --</option>
 	</select>
 </div>	
 <!-- FIXME -->
 			</div>
        			 <div class="col-md-8 col-md-offset-2 button-ubicar">
-       			 	<button type="button" class="btn btn-lg btn-default">UBICAR</button>
+       			 	<button id="btnSearchProjects" class="btn btn-lg btn-default">UBICAR</a>
        			 </div>
 	</div><!-- .container -->
       </div><!-- .rumbo-proyectos -->
@@ -97,23 +94,20 @@
 		<input class="form-control" id="inputName" name="name" type="text">
 	</div>	
 	<div class="row">
-	<select class="form-control" id="inputCityHall" name="cityHall">
-		<option data-id="-1">-- Seleccione una delegación --</option>
-		        	<option data-id="1">Miguel Hidalgo</option>
-    	        	<option data-id="2">Cuauhtémoc</option>
-    	        	<option data-id="3">Venustiano Carranza</option>
-    	        	<option data-id="4">Coyoacán</option>
-    	        	<option data-id="5">Iztapalapa</option>
-    	        	<option data-id="6">Milpa Alta</option>
-    	</select>
+		<select class="form-control" id="inputCityHallCreate" name="cityHall">
+			<option value="">-- Seleccione una delegación --</option>
+	       	@foreach($city_halls as $city_hall)
+	          	<option value="{{ $city_hall->id }}">{{ $city_hall->city_hall }}</option>
+	       	@endforeach
+		</select>
 	</div>
 	<div class="row">
-	<select class="form-control" id="inputDistrict" name="district" disabled="">
-		<option value="-1">-- Seleccione un distrito --</option>
-	</select>
+		<select class="form-control" id="inputDistrictCreate" name="district" disabled="">
+			<option value="-1">-- Seleccione un distrito --</option>
+		</select>
 	</div>
-	 <div class="row">
-	 	<button type="button" class="btn btn-lg btn-default">CUÉNTANOS+</button>
+	<div class="row">
+	 	<button id="btnCreateProject" class="btn btn-lg btn-default">CUÉNTANOS +</a>
 	 </div>
 </div>	
 <!-- FIXME -->
@@ -215,4 +209,8 @@
 	</div><!-- .container -->
       </div><!-- .rumbo-rumberos -->
 
+@stop
+
+@section('scripts')   
+   {{ HTML::script('js/home.js') }}
 @stop

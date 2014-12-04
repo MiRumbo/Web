@@ -52,7 +52,7 @@
 
 		<script src="//code.jquery.com/jquery.js"></script>
 		{{ HTML::script('bootstrap/js/bootstrap.min.js') }}
-		{{ HTML::script('js/utils.js') }}
+		{{ HTML::script('js/common.js') }}
 		@yield('scripts')
 	 </body>
 

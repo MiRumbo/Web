@@ -1,3 +1,5 @@
+retrieveDistricts('#inputCityHall', '#inputDistrict');
+
 $('#createProject').submit(function() {
 	var options = {
         beforeSubmit:  validateProjectForm,  // pre-submit callback 
@@ -23,11 +25,11 @@ function validateProjectForm(formData, jqForm, options) {
         alert('Invalid title');
         return false;
     }
-    if (idDistrict < 0) {
+    if (idDistrict == '') {
         alert('Invalid district');
         return false;
     }
-    if (idCategory < 0) {
+    if (idCategory == '') {
         alert('Invalid category');
         return false;
     }

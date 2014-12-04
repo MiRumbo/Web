@@ -14,7 +14,8 @@
 
 Route::get('/', function()
 {
-	return View::make('home');
+	$city_halls = CityHall::all();
+	return View::make('home')->with('city_halls', $city_halls);
 });
 
 Route::get('users', function()
@@ -30,6 +31,8 @@ Route::get('projects/create', 'ProjectController@getCreateView');
 Route::post('projects/create', 'ProjectController@create');
 
 Route::get('projects/{id}', 'ProjectController@getProjectInfoView');
+
+Route::get('projects', 'ProjectController@getProjectsView');
 
 Route::get('signin', 'UserController@getSigninView');
 Route::post('signin', 'UserController@signin');

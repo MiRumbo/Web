@@ -23,8 +23,8 @@ class UserController extends BaseController {
 			$user = User::create($user);
 			$user->hasError = false;
 			Auth::login($user);
-			$rol = Rol::where('rol', '=', 'citizen')->get()->first();
-			$user_rol = UserRol::create(array('rol_id' => $rol->id, 'user_id' => $user->id));
+			$role = Role::where('role', '=', 'citizen')->get()->first();
+			$user_role = UserRole::create(array('role_id' => $role->id, 'user_id' => $user->id));
 			return Response::json($user);
 		}
 		else
@@ -43,7 +43,7 @@ class UserController extends BaseController {
 	public function signin()
 	{
 		$user = new User(Input::all());
-		if (Auth::attempt(array('email' => $user->email, 'password' => $user->password)))
+		if (Auth::attempt(array('email' => $user->email, 'password' => $user->password), true))
 		{
 		    $response = array('hasError' => false);	
 		}
