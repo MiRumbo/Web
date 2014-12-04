@@ -5,7 +5,7 @@
 @stop
 
 @section('slider')
-<div class="bg-dark"><div class="container">
+<div class="container">
 <div id="carousel-home" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel-home" data-slide-to="0" class=""></li>
@@ -33,7 +33,7 @@
         </a>
       </div>
 </div><!-- .container -->
-</div>
+
 @stop
 
 @section('content')

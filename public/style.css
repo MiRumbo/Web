@@ -248,7 +248,7 @@ nav a {
 
 .rumbo-rumberos {
 	background: #ec891e;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 }
 
 .rumbo-rumberos h2 {
@@ -262,6 +262,7 @@ nav a {
 .item-proyecto {
 	text-align: center;
 	line-height: 1em;
+	margin-bottom: 1em;
 }
 
 .item-proyecto h3 {
@@ -317,9 +318,9 @@ footer {
 
 /* Adjuts responsive */
 
-
 @media (max-width:768px){
 
+	.rumbo-rumbear { height: 600px; }
 	.navbar-nav { margin-top: 5px; }
 	#navheader .navbar-form { clear: none; }
 	.rumbo-mejora h2,
