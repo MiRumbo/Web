@@ -31,7 +31,8 @@
 					<ul class="nav navbar-nav navbar-left">
 						<li><a href="#">¿Qué hay por Mi Rumbo?</a></li>
 						<li><a href="#">¡Quiero Rumbear!</a></li>
-						<li><a href="#">Contáctanos</a></li>
+						<li><a href="#">¿Qué es Mi Rumbo?</a></li>
+						<li><a href="#">FAQ</a></li>
 					</ul>
 					<form class="navbar-form navbar-right">
 						<input type="text" class="form-control" placeholder="Quiero buscar...">

@@ -22,7 +22,9 @@ class ProjectController extends BaseController {
 		$project_status = ProjectStatus::where('status', '=', 'Propuesta')->get()->first();
 		$project['project_status_id'] = $project_status->id;
 		$project['user_id'] = Auth::id();
+		$category_id = $project['category_id'];
 		$project = Project::create($project);
+		$project_category = ProjectCategory::create(array('project_id' => $project->id, 'category_id' => $category_id));
 		
 		if (Input::hasFile('photo'))
 		{					
@@ -41,7 +43,16 @@ class ProjectController extends BaseController {
 
 	public function getProjectInfoView($id)
 	{
-		return View::make('home');
+		$project = Project::find($id);
+		$project_category = ProjectCategory::where('project_id', '=', $project->id)->get()->first();
+		$category = Category::find($project_category->category_id);
+		$project->category = $category;
+		$project_photo = ProjectMedia::where('project_id', '=', $project->id)->get()->first();
+		if($project_photo != null)
+		{
+			$project->photo = $project_photo->resource;	
+		}		
+		return View::make('projects.info')->with('project', $project);
 	}
 
 }

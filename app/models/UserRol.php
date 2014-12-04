@@ -5,17 +5,17 @@ use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
-class Project extends Eloquent implements UserInterface, RemindableInterface {
+class UserRol extends Eloquent implements UserInterface, RemindableInterface {
 
 	use UserTrait, RemindableTrait;
 
-	protected $fillable = array('title', 'problem', 'solution', 'beneficiaries', 'cost', 'district_id', 'project_status_id', 'user_id');
+	protected $fillable = array('rol_id', 'user_id');
 
 	/**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
-	protected $table = 'projects';
+	protected $table = 'roles_users';
 
 }
