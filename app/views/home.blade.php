@@ -50,11 +50,11 @@
 	</div><!-- .rumbo-mejora -->
 	<div class="rumbo-proyectos">
 		<div class="container">
-			<h2 class="rumbo-heading">¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
-			<div class="row">
+			<h2>¿QUÉ PROYECTOS HAY POR MI RUMBO?</h2>
+			<div class="col-md-8 col-md-offset-2">
 <!-- FIXME -->
 <div class="form-group form-inline">	
-	<select class="form-control" id="inputCityHall" name="cityHall">
+	<select class="selectpicker" data-style="btn-primary" id="inputCityHall" name="cityHall">
 		<option data-id="-1">-- Seleccione una delegación --</option>
 		        	<option data-id="1">Miguel Hidalgo</option>
     	        	<option data-id="2">Cuauhtémoc</option>
@@ -63,13 +63,13 @@
     	        	<option data-id="5">Iztapalapa</option>
     	        	<option data-id="6">Milpa Alta</option>
     		</select>
-	<select class="form-control" id="inputDistrict" name="district" disabled="">
+	<select class="selectpicker" id="inputDistrict" name="district" disabled="">
 		<option value="-1">-- Seleccione un distrito --</option>
 	</select>
 </div>	
 <!-- FIXME -->
 			</div>
-       			 <div class="row">
+       			 <div class="col-md-8 col-md-offset-2 button-ubicar">
        			 	<button type="button" class="btn btn-lg btn-default">UBICAR</button>
        			 </div>
 	</div><!-- .container -->
@@ -78,20 +78,14 @@
       <div class="rumbo-rumbear">
 	<div class="rumbo-rumbear-inner">
 	<div class="container">
-          <h2 class="rumbo-heading">¡QUIERO RUMBEAR!</h2>
-	 <div class="col-md-6 col-md-offset-3">
+          <h2>¡QUIERO RUMBEAR!</h2>
+	 <div class="col-md-8 col-md-offset-2">
 	  <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title">Datos de tu propuesta</h3>
             </div>
             <div class="panel-body">
-		<div class="panel-rubro">
-			<ul>
-			 <li>EQUIPAMIENTO</li>
-			 <li>Outro</li>
-			</ul>
-		</div>
-		<div class="panel-form">
+		<div class="panel-form col-md-6">
 <!-- FIXME -->
 <div class="form-group form-inline">
 	<div class="row">
@@ -120,6 +114,54 @@
 </div>	
 <!-- FIXME -->
 		</div><!-- .panel-form -->
+		<div class="panel-rubro col-md-6">
+		<h4>RUBRO</h4>
+		<div class="tabs-rubro">
+		    
+		   <div class="tab">
+		       <input type="radio" id="tab-1" name="tab-group-1">
+		       <label for="tab-1" id="icon-obras">Obras y servicios</label>
+		       <div class="content-rumbear content-obras">
+			Obras y servicios
+		       </div> 
+		   </div>
+		    
+		   <div class="tab">
+		       <input type="radio" id="tab-2" name="tab-group-1">
+		       <label for="tab-2" id="icon-equipamiento">Equipamiento</label>
+		       <div class="content-rumbear content-equipamiento">
+		           Equipamiento
+		       </div> 
+		   </div>
+		    
+		    <div class="tab">
+		       <input type="radio" id="tab-3" name="tab-group-1">
+		       <label for="tab-3" id="icon-infraestructura">Infraestructura Urbana</label>
+		       <div class="content-rumbear content-infraestructura">
+		           Infraestructura Urbana
+		       </div> 
+		   </div>
+		
+		    <div class="tab">
+		       <input type="radio" id="tab-4" name="tab-group-1">
+		       <label for="tab-4" id="icon-prevencion">Prevención del delito</label>
+		       <div class="content-rumbear content-prevencion">
+		           Prevención del delito
+		       </div>
+		   </div>
+		
+		    <div class="tab">
+		       <input type="radio" id="tab-5" name="tab-group-1">
+		       <label for="tab-5" id="icon-actividades">Actividades recreativas, deportivas y culturales</label>
+		       <div class="content-rumbear content-actividades">
+		           Actividades recreativas, deportivas y culturales
+		       </div>
+		   </div>
+		
+		<div class="content-rumbear content-null">Selecione un rubro</div>
+		
+		</div><!-- .tabs-rubro -->
+		</div><!--- .panel-rubro -->
             </div>
           </div><!-- .panel -->          
         </div>

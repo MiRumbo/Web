@@ -16,6 +16,11 @@ h1, h2, h3, h4 {
 
 /* Style header */
 
+#navheader {
+	background: #FFF;
+	transition: 0.3s;
+}
+
 #logo-mirumbo {
 	background: url('images/logo-mirumbo.png') no-repeat;
 	width: 245px;
@@ -24,9 +29,26 @@ h1, h2, h3, h4 {
 	display: block;
 }
 
+nav.navbar-fixed-top #logo-mirumbo {
+	background: url('images/icons.png') top center no-repeat;
+	width: 230px;
+	height: 60px;
+	background-size: 260px;
+	background-position: 10px 5px;
+	transition: 0.3s;
+}
+
+.navbar-nav { margin-top: 120px; }
+nav.navbar-fixed-top .navbar-nav { margin-top: 5px; }
+#navheader .navbar-form { clear: right; }
+nav.navbar-fixed-top .navbar-form { clear: none !important; }
+
 nav a {
 	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 1.3em;
 }
+
 
 /* HOME: Rumbo Mejora */
 
@@ -67,6 +89,7 @@ nav a {
 .rumbo-proyectos {
 	background: #22b5bb url('images/bg3.png') top center no-repeat;
 	height: 549px;
+	padding: 2em;
 }
 
 .rumbo-proyectos h2 {
@@ -74,6 +97,27 @@ nav a {
 	font-size: 4em;
 	text-align: center;
 }
+
+.rumbo-proyectos .form-group {
+	padding-top: 6em;
+	padding-bottom: 2em;
+}
+
+.form-group .row { margin-bottom: 15px; }
+
+.rumbo-proyectos .form-group select {
+	font-size: 1.8em;
+	height: 2em;
+}
+
+.rumbo-proyectos #inputDistrict {
+	float: right;
+}
+
+.rumbo-proyectos .button-ubicar {
+	text-align: right;
+}
+
 
 /* HOME: Rumbo Rumbear */
 
@@ -92,6 +136,93 @@ nav a {
 	font-size: 4em;
 	text-align: center;
 }
+
+.rumbo-rumbear .panel-heading {
+	background: #b31e2d;
+	text-transform: uppercase;
+	padding: 1.5em;
+}
+
+.rumbo-rumbear .panel-heading {
+        border: 7px solid #EE4E42;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-radius: 0px;
+}
+
+.rumbo-rumbear .panel-primary {
+	border: 2px solid #EE4E42;
+	border-radius: 0px;
+}
+
+.rumbo-rumbear .panel-title  {
+	font-size: 1.8em;
+}
+
+.rumbo-rumbear .panel-body {
+	padding: 3em;
+}
+
+.rumbo-rumbear .tabs-rubro {
+  position: relative;   
+  clear: both;
+  margin: 25px 0;
+}
+.rumbo-rumbear .tab {
+  float: left;
+}
+.rumbo-rumbear .tab label {
+	position: relative;
+	width: 55px;
+	height: 55px;
+	text-indent: -2000px;
+	background: url('images/icons.png') bottom left no-repeat;
+}
+
+.rumbo-rumbear .tab [type=radio] {
+  display: none;   
+}
+
+.content-rumbear {
+	position: absolute;
+	padding: 20px;
+	background: #FFF;
+	font-weight: bold;
+	width: 275px;
+	height: 55px;
+	left: 0px;
+	top: 55px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.content-null { color: #DFDFDF; }
+
+#icon-obras { background-position: -55px bottom; }
+.content-obras { background: #f0a540; }
+
+#icon-equipamiento { background-position: 0px bottom; }
+.content-equipamiento { background: #cf1c5c; }
+
+#icon-infraestructura { background-position: -165px bottom; }
+.content-infraestructura { background: #1c75b1; }
+
+#icon-prevencion { background-position: -111px bottom; }
+.content-prevencion { background: #2e3187; }
+
+#icon-actividades { background-position: -222px bottom; }
+.content-actividades { background: #662d86; line-height: 1em; }
+
+.rumbo-rumbear [type=radio]:checked ~ label {
+	z-index: 2;
+	box-shadow: 5px 0px 0px 0px rgba(0, 0, 0, 0.20);
+}
+.rumbo-rumbear [type=radio]:checked ~ label ~ .content-rumbear {
+	z-index: 1;
+}
+
 
 /* HOME: Rumberos */
 
@@ -117,3 +248,23 @@ footer {
 	text-align: center;
 	height: 50px
 }
+
+/* Adjuts responsive */
+
+
+@media (max-width:768px){
+
+	.navbar-nav { margin-top: 5px; }
+	#navheader .navbar-form { clear: none; }
+	.rumbo-mejora h2,
+	.rumbo-proyectos h2,
+	.rumbo-rumbear h2,
+	.rumbo-rumberos h2 { font-size: 2.5em; }
+	.rumbo-proyectos { height: 375px; background-size: auto 100%; }
+	.rumbo-proyectos .form-group { padding-top: 1em; }
+	.rumbo-rumbear .panel-title,
+	.rumbo-proyectos .form-group select { font-size: 1.3em; }
+	.panel-rubro { width: 320px; margin-left: -47px; }
+
+} /* End responsive adjusts */
+

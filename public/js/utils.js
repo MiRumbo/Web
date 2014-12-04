@@ -17,3 +17,17 @@ $( "#inputCityHall" ).change(function() {
 	 	});
 	}
 });
+
+
+// Aplicar class para fixar o topo
+jQuery("document").ready(function($){
+var nav = $('#navheader');
+$(window).scroll(function () {
+if ($(this).scrollTop() > 130) {
+nav.addClass("navbar-fixed-top");
+} else {
+nav.removeClass("navbar-fixed-top");
+}
+});
+});
+

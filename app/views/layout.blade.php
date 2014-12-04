@@ -8,7 +8,7 @@
 
 	<body>
 
-		<nav class="navbar" role="navigation">
+		<nav class="navbar" role="navigation" id="navheader">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -21,7 +21,7 @@
 				</div><!-- .navbar-header -->
 
 				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-user navbar-right">
 						@if (Auth::check())
 							<li><a href="#">{{ Auth::user()->name }}</a></li>
 						@else
