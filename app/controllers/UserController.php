@@ -23,6 +23,8 @@ class UserController extends BaseController {
 			$user = User::create($user);
 			$user->hasError = false;
 			Auth::login($user);
+			$rol = Rol::where('rol', '=', 'citizen')->get()->first();
+			$user_rol = UserRol::create(array('rol_id' => $rol->id, 'user_id' => $user->id));
 			return Response::json($user);
 		}
 		else

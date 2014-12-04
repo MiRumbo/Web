@@ -41,7 +41,7 @@
                <select class="form-control" id="inputCategories" name="category_id">
                   <option data-id="-1">-- Seleccione un rubro --</option>
                   @foreach($categories as $category)
-                     <option data-id="{{ $category->id }}">{{ $category->category }}</option>
+                     <option value="{{ $category->id }}">{{ $category->category }}</option>
                   @endforeach
                </select>
          </div>
