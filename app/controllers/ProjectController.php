@@ -45,13 +45,12 @@ class ProjectController extends BaseController {
 	{
 		$project = Project::find($id);
 		$project_category = ProjectCategory::where('project_id', '=', $project->id)->get()->first();
-		$category = Category::find($project_category->category_id);
-		$project->category = $category;
-		$project_photo = ProjectMedia::where('project_id', '=', $project->id)->get()->first();
-		if($project_photo != null)
-		{
-			$project->photo = $project_photo->resource;	
-		}		
+		$project->category = Category::find($project_category->category_id);
+		$project_photo = ProjectMedia::where('project_id', '=', $project->id)->get()->first(); 
+		$project->photo = $project_photo != null ? $project_photo->resource : 'default.png';
+		$project->district = District::find($project->district_id);
+		$project->city_hall = CityHall::find($project->district->city_hall_id);
+		$project->status = ProjectStatus::find($project->project_status_id);
 		return View::make('projects.info')->with('project', $project);
 	}
 
