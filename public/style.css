@@ -119,7 +119,7 @@ nav a {
 .form-group .row { margin-bottom: 15px; }
 
 .rumbo-proyectos .form-group select {
-	font-size: 1.8em;
+	font-size: 1.7em;
 	height: 2em;
 }
 
@@ -313,6 +313,7 @@ footer a:hover,
 footer {
 	background: #510f3d;
 	color: #FFF;
+	padding-top: 2em;
 }
 
 footer .footer-nav {
