@@ -46,7 +46,62 @@
 		<div id="content">
 	        @yield('content')
 			<footer>
-				<p id="copyright">&copy; 2014 Mi Rumbo O.S.C.</p>
+				<div class="footer-nav container">
+				<div id="footer-mirumbo" class="col-xs-4 col-lg-3">
+				<h3>MI RUMBO</h3>
+				<ul>
+				 <li>Inicio</li>
+				 <li>Qué es Mi Rumbo</li>
+				 <li>Qué hay por Mi Rumbo</li>
+				 <li>Quiero Rumbear</li>
+				 <li>Perguntas frecuentes</li>
+				 <li>Suscripción</li>
+				</ul>
+				</div><!-- #footer-mirumbo -->
+				<div id="footer-quepuedo" class="col-xs-4 col-lg-3">
+				<h3>QUE PUEDO HACER</h3>
+				<ul>
+				 <li>Haz una propuesta</li>
+				 <li>Revisa una propuesta</li>
+				 <li>Vota Proyectos</li>
+				 <li>Monitorea Proyectos</li>
+				 <li>Evalúa Obras</li>
+				</ul>
+				</div><!-- #footer-quepuedo -->
+				<div id="footer-contacto" class="col-xs-4 col-lg-3">
+				<h3>CONTACTO</h3>
+				<ul>
+				 <li>Directorio</li>
+				 <li>Correos</li>
+				 <li>Medios</li>
+				 <li>Gobierno</li>
+				 <li>Blog</li>
+				</ul>
+				</div><!-- #footer-contacto -->
+				<div id="footer-social" class="col-xs-4 col-lg-3">
+				<h3>REDES SOCIALES</h3>
+				<ul>
+				 <li><a href="#"><i class="icons icon-facebook"></i> Facebook</a></li>
+				 <li><a href="#"><i class="icons icon-twitter"></i> Twitter</a></li>
+				 <li><a href="#"><i class="icons icon-youtube"></i> Youtube</a></li>
+				</ul>
+				</div><!-- #footer-social -->
+				<div id="footer-logos">
+				<ul>
+				 <li id="footer-flip"><a href="#">FLIP</a></li>
+				 <li id="footer-labic"><a href="#">Labic</a></li>
+				 <li id="footer-cc"><a href="#">Creative Commons</a></li>
+				 <li id="footer-github"><a href="#">Github</a></li>
+				</ul>
+				<p>Mi Rumbo es una plataforma abierta de presupuesto participativo propuesta por FLIP y desarrollada en<br /> el Laboratorio Iberoamericano de Innovación Ciudadana #LabICMx (Veracruz 2014).</p>	
+				</div>
+				</div><!-- .footer-nav -->
+				<div id="footer-copy">
+				<div class="container">
+				<i id="logo-footer"></i>
+				<p id="copyright">&copy; 2014 Mi Rumbo O.S.C. - Esta plataforma esta disponível sob licenciamento Creative Commons By-Nc<br /> e esta sendo desenvolvida por <a href="#">muitos colaboradores</a>.</p>
+				</div>
+				</div>
 			</footer>
 		</div><!-- #content -->
 
