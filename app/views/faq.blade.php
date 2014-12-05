@@ -6,8 +6,8 @@
 
 @section('content')
 	<div class="rumbo-page">
-		<div class="container">
-			<h2>FAQ</h2>
+		<div class="container" id="page-faq">
+			<h2 id="faq-title">FAQ</h2>
 
 <h3>¿QUÉ ES PRESUPUESTO?</h3>
 <p>Es el dinero que el gobierno tiene para hacer cosas en las ciudades y para los ciudadanos. Este dinero viene de nuestros impuestos, es tu
@@ -40,7 +40,7 @@ proponer soluciones, acercarse a los consejeros y monitorear las acciones. Tu er
 </ul>
 
 <h3>CONTÁCTO DIRECTO</h3>
-<big><a href="mailto:hola@mirumbo.com">hola@mirumbo.org</a></big>
+<p id="mail-faq"><a href="mailto:hola@mirumbo.com">hola@mirumbo.org</a></p>
 
 		</div><!-- .container -->
 	</div><!-- .rumbo-page -->

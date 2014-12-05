@@ -307,6 +307,31 @@ footer a,
 footer a:hover,
 .status-proyecto a:hover { color: rgba(245, 251, 160, 1); }
 
+/* Rumbo Page styes */
+
+.rumbo-page {
+	background: #009a90;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.rumbo-page .container {
+	background: #e6f5f4;
+	padding: 4em;
+}
+
+#page-faq { margin-top: 150px; }
+
+#faq-title {
+    background: url('images/logo-mirumbo.png') no-repeat scroll 0% 0% transparent;
+    width: 245px;
+    height: 175px;
+    margin: 0 auto;
+    margin-top: -200px;
+    text-indent: -2000px;
+    display: block;
+}
+#mail-faq { text-align: center; font-size: 2em; }
 
 /* Footer style */
 
