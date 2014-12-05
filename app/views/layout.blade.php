@@ -29,8 +29,8 @@
 						@endif            
 					</ul>
 					<ul class="nav navbar-nav navbar-left">
-						<li><a href="#QueHay">¿Qué hay por Mi Rumbo?</a></li>
-						<li><a href="#QuieroRumbear">¡Quiero Rumbear!</a></li>
+						<li><a href="/#QueHay">¿Qué hay por Mi Rumbo?</a></li>
+						<li><a href="/#QuieroRumbear">¡Quiero Rumbear!</a></li>
 						<li><a href="/quees">¿Qué es Mi Rumbo?</a></li>
 						<li><a href="/faq">FAQ</a></li>
 					</ul>
