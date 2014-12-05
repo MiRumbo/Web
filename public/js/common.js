@@ -4,8 +4,10 @@ jQuery("document").ready(function($) {
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 130) {
 			nav.addClass("navbar-fixed-top");
+			document.body.style.margin = "200px 0px 0px 0px";
 		} else {
 			nav.removeClass("navbar-fixed-top");
+			document.body.style.margin = "0px 0px 0px 0px";
 		}
 	});
 });
