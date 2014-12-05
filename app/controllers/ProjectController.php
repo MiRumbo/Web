@@ -6,7 +6,13 @@ class ProjectController extends BaseController {
 	{
 		$city_halls = CityHall::all();	
 	   	$categories = Category::all();
-		return View::make('projects.create')->with('city_halls', $city_halls)->with('categories', $categories);
+	   	$districts = Input::get('ch') != null ?
+	   		District::where('city_hall_id', '=', Input::get('ch'))->get() : null;
+
+		return View::make('projects.create')
+					->with('city_halls', $city_halls)
+					->with('categories', $categories)
+					->with('districts', $districts);
 	}
 
 	public function create()
@@ -21,6 +27,7 @@ class ProjectController extends BaseController {
 		$project = Input::all();
 		$project_status = ProjectStatus::where('status', '=', 'Propuesta')->get()->first();
 		$project['project_status_id'] = $project_status->id;
+
 		$project['user_id'] = Auth::id();
 		$category_id = $project['category_id'];
 		$project = Project::create($project);

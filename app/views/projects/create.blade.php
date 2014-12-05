@@ -11,22 +11,38 @@
          	<legend>Datos de tu propuesta</legend>
          	<div class="form-group">
             	<label for="inputTitle">Nombre de la propuesta</label>
-            	<input type="text" class="form-control" id="inputTitle" name="title" placeholder="Ej: Calle Emiliano Zapata más limpia">
+            	<input type="text" class="form-control" id="inputTitle" name="title" value="{{ Input::get('t') }}" placeholder="Ej: Calle Emiliano Zapata más limpia">
          	</div>
          	<div class="form-group">
             	<label for="inputCityHall">Delegación</label>
             	<select class="form-control" id="inputCityHall" name="cityHall">
 	               	<option value="">-- Seleccione una delegación --</option>
 	               	@foreach($city_halls as $city_hall)
-	                  	<option value="{{ $city_hall->id }}">{{ $city_hall->city_hall }}</option>
+	                  	<option value="{{ $city_hall->id }}" 
+	                  		@if (Input::get('ch') == $city_hall->id)
+								selected
+							@endif  
+	                  	>{{ $city_hall->city_hall }}</option>
 	               	@endforeach
             	</select>
          	</div>
          	<div class="form-group">
 	            <label for="inputDistrict">Colonia</label>
-	            <select class="form-control" id="inputDistrict" name="district_id" disabled>
-	               	<option value="">-- Seleccione un distrito --</option>
-	            </select>
+               	@if($districts != null)
+               		<select class="form-control" id="inputDistrict" name="district_id">
+               			<option value="">-- Seleccione un distrito --</option>
+		               	@foreach($districts as $district)
+		                  	<option value="{{ $district->id }}" 
+		                  		@if (Input::get('d') == $district->id)
+									selected
+								@endif  
+		                  	>{{ $district->district }}</option>
+		               	@endforeach
+                @else
+                	<select class="form-control" id="inputDistrict" name="district_id" disabled>
+               			<option value="">-- Seleccione un distrito --</option>         
+               	@endif
+            		</select>
 	        </div>
 	        <div class="form-group">
 	            <label for="inputProblem">Problema</label>
@@ -41,7 +57,11 @@
                	<select class="form-control" id="inputCategory" name="category_id">
                   	<option value="">-- Seleccione un rubro --</option>
 	                  @foreach($categories as $category)
-	                     <option value="{{ $category->id }}">{{ $category->category }}</option>
+	                     <option value="{{ $category->id }}"
+	                     	@if (Input::get('c') == $category->id)
+								selected
+							@endif  
+		                  	>{{ $category->category }}</option>
 	                  @endforeach
                	</select>
 	        </div>
