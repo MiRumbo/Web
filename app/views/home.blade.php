@@ -91,7 +91,7 @@
 <div class="form-group form-inline">
 	<div class="row">
 		<label for="inputName">Nombre de la propuesta</label>
-		<input class="form-control" id="inputName" name="name" type="text">
+		<input class="form-control" id="inputTitle" name="name" type="text">
 	</div>	
 	<div class="row">
 		<select class="form-control" id="inputCityHallCreate" name="cityHall">
@@ -103,7 +103,7 @@
 	</div>
 	<div class="row">
 		<select class="form-control" id="inputDistrictCreate" name="district" disabled="">
-			<option value="-1">-- Seleccione un distrito --</option>
+			<option value="">-- Seleccione un distrito --</option>
 		</select>
 	</div>
 	<div class="row">
@@ -114,10 +114,10 @@
 		</div><!-- .panel-form -->
 		<div class="panel-rubro col-md-6">
 		<h4>RUBRO</h4>
-		<div class="tabs-rubro">
+		<div id="tabsCatgories" class="tabs-rubro">
 		    
 		   <div class="tab">
-		       <input type="radio" id="tab-1" name="tab-group-1">
+		       <input value="1" type="radio" id="tab-1" name="tab-group-1">
 		       <label for="tab-1" class="icons icon-obras">Obras y servicios</label>
 		       <div class="content-rumbear content-obras">
 			Obras y servicios
@@ -125,7 +125,7 @@
 		   </div>
 		    
 		   <div class="tab">
-		       <input type="radio" id="tab-2" name="tab-group-1">
+		       <input value="2" type="radio" id="tab-2" name="tab-group-1">
 		       <label for="tab-2" class="icons icon-equipamiento">Equipamiento</label>
 		       <div class="content-rumbear content-equipamiento">
 		           Equipamiento
@@ -133,7 +133,7 @@
 		   </div>
 		    
 		    <div class="tab">
-		       <input type="radio" id="tab-3" name="tab-group-1">
+		       <input value="3" type="radio" id="tab-3" name="tab-group-1">
 		       <label for="tab-3" class="icons icon-infraestructura">Infraestructura Urbana</label>
 		       <div class="content-rumbear content-infraestructura">
 		           Infraestructura Urbana
@@ -141,7 +141,7 @@
 		   </div>
 		
 		    <div class="tab">
-		       <input type="radio" id="tab-4" name="tab-group-1">
+		       <input value="4" type="radio" id="tab-4" name="tab-group-1">
 		       <label for="tab-4" class="icons icon-prevencion">Prevención del delito</label>
 		       <div class="content-rumbear content-prevencion">
 		           Prevención del delito
@@ -149,7 +149,7 @@
 		   </div>
 		
 		    <div class="tab">
-		       <input type="radio" id="tab-5" name="tab-group-1">
+		       <input value="5" type="radio" id="tab-5" name="tab-group-1">
 		       <label for="tab-5" class="icons icon-actividades">Actividades recreativas, deportivas y culturales</label>
 		       <div class="content-rumbear content-actividades">
 		           Actividades recreativas, deportivas y culturales

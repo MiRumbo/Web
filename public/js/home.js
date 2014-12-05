@@ -8,5 +8,9 @@ retrieveDistricts('#inputCityHallSearch', '#inputDistrictSearch');
 retrieveDistricts('#inputCityHallCreate', '#inputDistrictCreate');
 
 $('#btnCreateProject').click(function(){
-	window.location.href = 'projects/create?t=' + 'idCityHall' + '&c=' + 'idDistrict' + '&ch=&d=';
+	var title = $('#inputTitle').val();
+	var idCityHall = $('#inputCityHallCreate').val();
+	var idDistrict = $('#inputDistrictCreate').val();
+	var idCategory = $("#tabsCatgories input[type='radio']:checked").val();
+	window.location.href = 'projects/create?t=' + title + '&c=' + idCategory + '&ch=' + idCityHall + '&d=' + idDistrict;
 });
