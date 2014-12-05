@@ -6,7 +6,7 @@
 
 @section('content')
 	<div class="rumbo-page">
-		<div class="container">
+		<div id="page-equipo" class="container">
 			<h2>Equipo</h2>
 <center>
 			<img src="/images/equipo.png" />

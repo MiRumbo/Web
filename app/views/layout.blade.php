@@ -50,12 +50,12 @@
 				<div id="footer-mirumbo" class="col-xs-4 col-lg-3">
 				<h3>MI RUMBO</h3>
 				<ul>
-				 <li>Inicio</li>
-				 <li>Qué es Mi Rumbo</li>
-				 <li>Qué hay por Mi Rumbo</li>
-				 <li>Quiero Rumbear</li>
-				 <li>Perguntas frecuentes</li>
-				 <li>Suscripción</li>
+				 <li><a href="/" alt="Home">Inicio</a></li>
+				 <li><a href="/quees" alt="Qué es Mi Rumbo">Qué es Mi Rumbo</a></li>
+				 <li><a href="/#QueHay">Qué hay por Mi Rumbo</a></li>
+				 <li><a href="/projects/create">Quiero Rumbear</a></li>
+				 <li><a href="/faq">Perguntas frecuentes</a></li>
+				 <li><a href="/signup">Suscripción</a></li>
 				</ul>
 				</div><!-- #footer-mirumbo -->
 				<div id="footer-quepuedo" class="col-xs-4 col-lg-3">
@@ -81,17 +81,17 @@
 				<div id="footer-social" class="col-xs-4 col-lg-3">
 				<h3>REDES SOCIALES</h3>
 				<ul>
-				 <li><a href="#"><i class="icons icon-facebook"></i> Facebook</a></li>
-				 <li><a href="#"><i class="icons icon-twitter"></i> Twitter</a></li>
-				 <li><a href="#"><i class="icons icon-youtube"></i> Youtube</a></li>
+				 <li><a href="https://www.facebook.com/pages/Mi-Rumbo/363451403832116" alt="Facebook /MiRumboMX"><i class="icons icon-facebook"></i> Facebook</a></li>
+				 <li><a href="https://twitter.com/mirumbomx" alt="Twitter @MiRumboMX"><i class="icons icon-twitter"></i> Twitter</a></li>
+				 <li><a href="https://www.youtube.com/user/mirumbomx"><i class="icons icon-youtube"></i> Youtube</a></li>
 				</ul>
 				</div><!-- #footer-social -->
 				<div id="footer-logos">
 				<ul>
-				 <li id="footer-flip"><a href="#">FLIP</a></li>
-				 <li id="footer-labic"><a href="#">Labic</a></li>
-				 <li id="footer-cc"><a href="#">Creative Commons</a></li>
-				 <li id="footer-github"><a href="#">Github</a></li>
+				 <li id="footer-flip"><a href="http://www.flipmocracy.com/" alt="FLiP">FLIP</a></li>
+				 <li id="footer-labic"><a href="http://www.ciudadania20.org/pt-pt/colaboradoreslabicmxpt/" alt="Laboratório Ibero-Americano de Inovação Cidadã">Labic</a></li>
+				 <li id="footer-cc"><a href="http://creativecommons.org/licenses/by-nc/4.0/" alt="Creative Commons - Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Creative Commons</a></li>
+				 <li id="footer-github"><a href="https://github.com/MiRumbo" alt="Github :: MiRumbo">Github</a></li>
 				</ul>
 				<p>Mi Rumbo es una plataforma abierta de presupuesto participativo propuesta por FLIP y desarrollada en<br /> el Laboratorio Iberoamericano de Innovación Ciudadana #LabICMx (Veracruz 2014).</p>	
 				</div>
