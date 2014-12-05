@@ -5,8 +5,11 @@
 @stop
 
 @section('content')
+<div class="rumbo-page">
+<div class="container" id="project-create">
+<h2>¡Quiero Rumbear!</h2>
 <div class="row center">
-   	<div class="col-md-4 col-md-offset-4">      
+   	<div class="col-md-8 col-md-offset-2">      
       	{{ Form::open(array('url' => 'projects/create', 'id' => 'createProject', 'files' => true)) }}
          	<legend>Datos de tu propuesta</legend>
          	<div class="form-group">
@@ -61,6 +64,8 @@
      	{{ Form::close() }}
    	</div>
 </div>
+</div><!-- #project-create -->
+</div><!-- .rumbo-page -->
 @stop
 
 @section('scripts')   
