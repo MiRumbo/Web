@@ -40,14 +40,15 @@ h1, h2, h3, h4 {
 	display: block;
 }
 
+#logo-footer,
 nav.navbar-fixed-top #logo-mirumbo {
-	background: url('images/icons.png') top center no-repeat;
+	background: url('images/icons.png') 0px 5px no-repeat;
 	width: 230px;
 	height: 60px;
-	background-size: 260px;
-	background-position: 10px 5px;
 	transition: 0.3s;
 }
+
+#logo-footer { display: block; float: left; }
 
 .navbar-nav { margin-top: 120px; }
 .navbar-user { margin-top: 5px; }
@@ -118,7 +119,7 @@ nav a {
 .form-group .row { margin-bottom: 15px; }
 
 .rumbo-proyectos .form-group select {
-	font-size: 1.8em;
+	font-size: 1.7em;
 	height: 2em;
 }
 
@@ -300,21 +301,95 @@ nav a {
 	line-height: 55px;
 	text-align: center;
 }
+
+footer a,
 .status-proyecto a { color: #FFF; text-decoration: none; }
+footer a:hover,
 .status-proyecto a:hover { color: rgba(245, 251, 160, 1); }
+
+/* Rumbo Page styes */
+
+.rumbo-page {
+	background: #009a90;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.rumbo-page .container {
+	background: #e6f5f4;
+	padding: 4em;
+}
+
+#page-equipo { background: #FFF; }
+#page-quees { background: #48bbb9; }
+#page-faq { margin-top: 150px; }
+
+#faq-title {
+    background: url('images/logo-mirumbo.png') no-repeat scroll 0% 0% transparent;
+    width: 245px;
+    height: 175px;
+    margin: 0 auto;
+    margin-top: -200px;
+    text-indent: -2000px;
+    display: block;
+}
+#mail-faq { text-align: center; font-size: 2em; }
 
 /* Footer style */
 
 footer {
-	background: #510f3d url('images/footer.png') bottom center no-repeat;
-	min-height: 450px;
+	background: #510f3d;
 	color: #FFF;
+	padding-top: 2em;
+}
+
+footer .footer-nav {
+        background: url('images/footer.png') bottom center no-repeat;
+	min-height: 450px;
 }
 
 #copyright {
 	text-align: center;
 	height: 50px
 }
+
+footer ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+footer li { line-height: 30px; }
+
+#footer-social li a { margin-left: 5px; }
+#footer-social li { margin-bottom: 5px; }
+
+#footer-social .icons {
+	width: 30px;
+	height: 30px;
+}
+.icon-youtube { background-position: 0px -119px; }
+.icon-facebook { background-position: -62px -119px; }
+.icon-twitter { background-position: -31px -119px }
+
+#footer-logos { clear: both; text-align: center; padding: 2em; }
+#footer-logos p { clear: both; padding: 1em; }
+#footer-logos ul { margin: 0 auto; clear: both; }
+#footer-logos li { display: inline-block; margin-right: 3em; }
+#footer-logos a {
+	text-indent: -5000px;
+	display: block;
+	height: 40px;
+	width: 100px;
+        background: url('images/icons.png') no-repeat;
+}
+
+#footer-flip a { background-position: 0px -65px; }
+#footer-labic a { background-position: -110px -65px; }
+#footer-cc a { background-position: -245px -65px; width: 125px; }
+#footer-github a { background-position: -370px -65px; }
+
+#footer-copy { background: #3a0c2e; padding: 2em; margin-top: -1em; border-top: 2px solid #510f3d; }
+#footer-copy a { border-bottom: 1px dotted #FFF; }
 
 /* Adjuts responsive */
 

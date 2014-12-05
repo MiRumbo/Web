@@ -43,3 +43,15 @@ Route::get('signup', 'UserController@getSignupView');
 Route::post('signup', 'UserController@signup');
 
 Route::get('cityhall/{id}/districts', 'LocationController@getDistrictsByCityHall');
+
+Route::get('faq', function(){
+	return View::make('faq');
+});
+
+Route::get('quees', function(){
+	return View::make('quees');
+});
+
+Route::get('equipo', function(){
+	return View::make('equipo');
+});

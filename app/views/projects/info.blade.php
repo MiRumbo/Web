@@ -5,7 +5,8 @@
 @stop
 
 @section('content')
-<div class="container">
+<div class="rumbo-page {{ $project->status }}">
+<div class="container" id="page-project">
 	<legend>{{ $project->title }}</legend>
 	{{ HTML::image('projects_media/photos/' . $project->resource) }}
 	<div><b>Ubicación: </b>{{ trim($project->district) . ', ' . $project->city_hall}}</div>
@@ -29,4 +30,5 @@
 	<div><b>Estado: </b>{{ $project->status }}</div>
 	<div><b>Creado por: </b>{{ $project->username }}</div>
 </div>
+</div><!-- #page-project -->
 @stop
