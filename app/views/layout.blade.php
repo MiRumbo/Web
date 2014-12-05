@@ -99,7 +99,7 @@
 				<div id="footer-copy">
 				<div class="container">
 				<i id="logo-footer"></i>
-				<p id="copyright">&copy; 2014 Mi Rumbo O.S.C. - Esta plataforma esta disponível sob licenciamento Creative Commons By-Nc<br /> e esta sendo desenvolvida por <a href="#">muitos colaboradores</a>.</p>
+				<p id="copyright">&copy; 2014 Mi Rumbo O.S.C. - Esta plataforma esta disponível sob licenciamento Creative Commons By-Nc<br /> e esta sendo desenvolvida por <a href="/equipo">muitos colaboradores</a>.</p>
 				</div>
 				</div>
 			</footer>
