@@ -75,7 +75,7 @@
 				 <li>Correos</li>
 				 <li>Medios</li>
 				 <li>Gobierno</li>
-				 <li>Blog</li>
+				 <li><a href="/blog">Blog</a></li>
 				</ul>
 				</div><!-- #footer-contacto -->
 				<div id="footer-social" class="col-xs-4 col-lg-3">
