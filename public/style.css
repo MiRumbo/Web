@@ -307,6 +307,11 @@ footer a,
 footer a:hover,
 .status-proyecto a:hover { color: rgba(245, 251, 160, 1); }
 
+#page-project { background: #FFF; }
+.Propuesta #title-project { background: #e56522; }
+#title-project h2 { font-size: 1.5em; color: #FFF; }
+
+
 /* Rumbo Page styes */
 
 .rumbo-page {
