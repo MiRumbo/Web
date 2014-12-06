@@ -51,7 +51,7 @@ class ProjectController extends BaseController {
 	public function getProjectQuery()
 	{
 		$query = DB::table('projects')
-				->select('title', 'problem', 'solution', 'cost', 'beneficiaries', 'city_hall',
+				->select('title', 'problem', 'solution', 'cost', 'beneficiaries', 'city_hall', 'category_id',
 					'district', 'category', 'resource', 'status', 'username', 'name')
 				->join('districts', 'districts.id', '=', 'district_id')
 				->join('city_halls', 'city_halls.id', '=', 'city_hall_id')

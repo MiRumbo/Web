@@ -1,6 +1,6 @@
 $('#btnSearchProjects').click(function(){
-	var idCityHall = $('#inputCityHall').val() != null ? $('#inputCityHall').val() : '';
-	var idDistrict = $('#inputDistrict').val() != null ? $('#inputDistrict').val() : '';
+	var idCityHall = $('#inputCityHallSearch').val() != null ? $('#inputCityHallSearch').val() : '';
+	var idDistrict = $('#inputDistrictSearch').val() != null ? $('#inputDistrictSearch').val() : '';
 	window.location.href = 'projects?ch=' + idCityHall + '&d=' + idDistrict;
 });
 
