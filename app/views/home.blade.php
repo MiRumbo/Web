@@ -41,14 +41,27 @@
 		<div class="container">
 			<h2>ÚNETE Y MEJORA TU RUMBO</h2>
 
-			<ul class="col-md-6">
-				<li>1. HAZ TU PROPUESTA</li>
-				<li>2. COLABORA Y HAZLO UN PROYECTO</li>
-				<li>3. COMPARTE TU PROYECTO</li>
-				<li>4. VOTA POR OTROS PROYECTOS</li>
-				<li>5. MONITOREA</li>
-				<li>6. ¡TU RUMBO MEJORA!</li>
-			</ul>
+
+<div role="tabmejora">
+  <ul class="col-md-6" role="tablist2">
+    <li role="tabitem" class="active"><a href="#item1" aria-controls="item1" role="tab" data-toggle="tab">1. HAZ TU PROPUESTA</a></li>
+    <li role="tabitem"><a href="#item2" aria-controls="item2" role="tab" data-toggle="tab">2. COLABORA Y HAZLO UN PROYECTO</a></li>
+    <li role="tabitem"><a href="#item3" aria-controls="item3" role="tab" data-toggle="tab">3. COMPARTE TU PROYECTO</a></li>
+    <li role="tabitem"><a href="#item4" aria-controls="item4" role="tab" data-toggle="tab">4. VOTA POR OTROS PROYECTOS</a></li>
+    <li role="tabitem"><a href="#item5" aria-controls="item5" role="tab" data-toggle="tab">5. MONITOREA</a></li>
+    <li role="tabitem"><a href="#item6" aria-controls="item6" role="tab" data-toggle="tab">6. ¡TU RUMBO MEJORA!</a></li>
+  </ul>
+
+  <div class="tab-content col-md-6">
+    <div role="tabmejora" class="tab-pane active" id="item1"></div>
+    <div role="tabmejora" class="tab-pane" id="item2"></div>
+    <div role="tabmejora" class="tab-pane" id="item3"></div>
+    <div role="tabmejora" class="tab-pane" id="item4"></div>
+    <div role="tabmejora" class="tab-pane" id="item5"></div>
+    <div role="tabmejora" class="tab-pane" id="item6"></div>
+  </div>
+
+</div>
 		</div><!-- .container -->
 	</div><!-- .rumbo-mejora -->
 	<a name="QueHay"></a>

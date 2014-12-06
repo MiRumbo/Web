@@ -74,6 +74,7 @@ nav a {
 .rumbo-mejora {
 	background: #F5F5F5;
 	padding: 2em;
+	min-height: 550px;
 }
 
 .rumbo-mejora h2 {
@@ -87,21 +88,41 @@ nav a {
 	list-style: none;
 }
 
-.rumbo-mejora li {
+.rumbo-mejora li a {
 	color: #1C75B1;
 	font-size: 1.2em;
 	font-weight: bold;
-	line-height: 1.8em;
+	line-height: 2em;
 	margin-bottom: 0.3em;
-	padding-left: 2em;
+	padding: 0.5em;
 	cursor: pointer;
+	text-decoration: none;
+	width: 100%;
 	transition: 0.2s;
 }
 
-.rumbo-mejora li:hover {
+.rumbo-mejora li.active a,
+.rumbo-mejora li.active,
+.rumbo-mejora li a:hover {
 	color: #FFF;
 	background: #ed5c1b;
 }
+
+.rumbo-mejora .tab-pane {
+	display: block;
+	width: 360px;
+	height: 360px;
+	position: absolute;
+	top: 0px;
+	background: #F5F5F5 url('images/passos.png') left top no-repeat; 
+}
+
+#item1 { background-position: 0px 0px; }
+#item2 { background-position: 0px -360px; }
+#item3 { background-position: 0px -720px; }
+#item4 { background-position: 0px -1080px; }
+#item5 { background-position: 0px -1440px; }
+#item6 { background-position: 0px -1800px; }
 
 /* HOME: Rumbo Proyectos */
 
