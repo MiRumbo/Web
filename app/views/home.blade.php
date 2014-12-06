@@ -183,42 +183,48 @@
       <div class="rumbo-rumberos">
 	<div class="container">
 		<h2>RUMBEROS DEL MES</h2>
-        <div class="col-lg-4 item-proyecto">
-          <img class="thumb-proyecto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito">
-          <h3>MI PARQUECITO</h3>
-		<div class="content-proyecto">
-        	  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        	  <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
-        	  <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
-		  <div class="status-proyecto">
-			<a href="/proyecto/14"><i class="icons icon-category-1"></i>¡COMPLETADO!</a>
-		  </div>
+
+<!-- FIXME -->
+<div class="col-lg-4 item-proyecto">
+                            <img title="" src="/projects_media/photos/141417631374.jpg" class="thumb-proyecto" alt="Foto del proyecto">
+                      
+            <h3>PARQUÍMETROS</h3>
+		    <div class="content-proyecto">
+                <p>Muchos autos estacionados frente a las casas en la colonia.</p>
+    	        <p class="author"><a href="#profie-author">Por: Carlos</a></p>
+    	        <p class="local">Del. Cuauhtémoc - Col. Condesa </p>
+    		    <div class="status-proyecto">
+                    <a href="/proyecto/14"><i class="icons icon-category-1"></i>PROPUESTA</a>
+    		    </div>
         	</div>
-	</div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 item-proyecto">
-          <img class="thumb-proyecto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito">
-          <h3>PUENTE PA TODOS</h3>
-		<div class="content-proyecto">
-        	  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        	  <p class="author"><a href="#profie-author">Por: Marcela Brasil</a></p>
-        	  <p class="local">Del. Azcapotzalco</p>
-		  <div class="status-proyecto">
-			<a href="/proyecto/14"><i class="icons icon-category-1"></i>¡COMPLETADO!</a>
-		  </div>
-		</div>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 item-proyecto">
-          <img class="thumb-proyecto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito">
-          <h3>¡LUCES Y LUCES!</h3>
-		<div class="content-proyecto">
-        	  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        	  <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
-        	  <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
-		  <div class="status-proyecto">
-			<a href="/proyecto/14"><i class="icons icon-category-2"></i>¡COMPLETADO!</a>
-		  </div>
+	    </div>
+<div class="col-lg-4 item-proyecto">
+                            <img title="" src="/projects_media/photos/191417633081.jpg" class="thumb-proyecto" alt="Foto del proyecto">
+                      
+            <h3>DESASOLVE O CAMBIO DE TUBERIA DEL DRENAJE</h3>
+		    <div class="content-proyecto">
+                <p>Muchas inundaciones en tiempos de lluvias</p>
+    	        <p class="author"><a href="#profie-author">Por: Dardo Ceballos</a></p>
+    	        <p class="local">Del. Iztapalapa - Col. Santa Cruz Meyehualco </p>
+    		    <div class="status-proyecto">
+                    <a href="/proyecto/14"><i class="icons icon-category-1"></i>PROPUESTA</a>
+    		    </div>
         	</div>
-	</div><!-- /.col-lg-4 -->
+	    </div>
+<div class="col-lg-4 item-proyecto">
+                            <img title="" src="/projects_media/photos/231417633981.jpg" class="thumb-proyecto" alt="Foto del proyecto">
+                      
+            <h3>GIMNASIO AL AIRE LIBRE BOULEVAR NIÑOS HEROES</h3>
+		    <div class="content-proyecto">
+                <p>Falta de espacios recreativos</p>
+    	        <p class="author"><a href="#profie-author">Por: Roberto Galicia</a></p>
+    	        <p class="local">Del. Iztapalapa - Col. Santa Cruz Meyehualco </p>
+    		    <div class="status-proyecto">
+                    <a href="/proyecto/14"><i class="icons icon-category-1"></i>PROPUESTA</a>
+    		    </div>
+        	</div>
+	    </div>
+<!-- FIXME -->
 	</div><!-- .container -->
       </div><!-- .rumbo-rumberos -->
 
