@@ -227,19 +227,19 @@ nav a {
         background: url('images/icons.png') bottom left no-repeat;
 }
 
-.icon-obras { background-position: -55px bottom; }
+.icon-category-1 { background-position: -55px bottom; }
 .content-obras { background: #f0a540; }
 
-.icon-equipamiento { background-position: 0px bottom; }
+.icon-category-2 { background-position: 0px bottom; }
 .content-equipamiento { background: #cf1c5c; }
 
-.icon-infraestructura { background-position: -165px bottom; }
+.icon-category-3 { background-position: -165px bottom; }
 .content-infraestructura { background: #1c75b1; }
 
-.icon-prevencion { background-position: -111px bottom; }
+.icon-category-4 { background-position: -111px bottom; }
 .content-prevencion { background: #2e3187; }
 
-.icon-actividades { background-position: -222px bottom; }
+.icon-category-5 { background-position: -222px bottom; }
 .content-actividades { background: #662d86; line-height: 1em; }
 
 .rumbo-rumbear [type=radio]:checked ~ label {

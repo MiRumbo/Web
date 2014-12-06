@@ -7,7 +7,7 @@
 @section('content')
 <div class="rumbo-rumberos">
 	<div class="container">
-		<h2>PROYECTOS</h2>
+		<h2>PROYECTOS</h2>        
         @if ($city_hall != null)
             <h3>Del. {{ $city_hall }}@if ($district != null), Col. {{ $district }}</h3>
             @else
@@ -23,16 +23,18 @@
             @endif          
             <h3>{{ $project->title }}</h3>
 		    <div class="content-proyecto">
-        	   <p><b>Problema: </b>{{ $project->problem }}</p>
-               <p><b>Solución: </b>{{ $project->problem }}</p>
-        	   <p class="author"><a href="#profie-author">Por: {{ $project->name }}</a></p>
-        	   <p class="local">Del. {{ $project->city_hall }} - Col. {{ $project->district }}</p>
+                <p>{{ $project->problem }}</p>
+    	        <p class="author"><a href="#profie-author">Por: {{ $project->name }}</a></p>
+    	        <p class="local">Del. {{ $project->city_hall }} - Col. {{ $project->district }}</p>
     		    <div class="status-proyecto">
-                    <a href="/proyecto/14"><i class="icons icon-obras"></i>{{ strtoupper($project->status) }}</a>
+                    <a href="/proyecto/14"><i class="icons icon-category-{{ $project->category_id }}"></i>{{ strtoupper($project->status) }}</a>
     		    </div>
         	</div>
 	    </div>
         @endforeach
+        @if (count($projects) == 0)
+            <p>No hay proyectos en este rumbo</p>
+        @endif
     </div>
 </div>
 @stop
