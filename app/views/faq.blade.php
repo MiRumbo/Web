@@ -40,7 +40,7 @@ proponer soluciones, acercarse a los consejeros y monitorear las acciones. Tu er
 </ul>
 
 <h3>CONTÁCTO DIRECTO</h3>
-<p id="mail-faq"><a href="mailto:hola@mirumbo.com">hola@mirumbo.org</a></p>
+<p id="mail-faq"><a href="mailto:mirumbomx@gmail.com">mirumbomx@gmail.com</a></p>
 
 		</div><!-- .container -->
 	</div><!-- .rumbo-page -->
