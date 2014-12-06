@@ -51,8 +51,8 @@ class ProjectController extends BaseController {
 	public function getProjectQuery()
 	{
 		$query = DB::table('projects')
-				->select('title', 'problem', 'solution', 'cost', 'beneficiaries', 
-					'city_hall', 'district', 'category', 'resource', 'status', 'username')
+				->select('title', 'problem', 'solution', 'cost', 'beneficiaries', 'city_hall',
+					'district', 'category', 'resource', 'status', 'username', 'name')
 				->join('districts', 'districts.id', '=', 'district_id')
 				->join('city_halls', 'city_halls.id', '=', 'city_hall_id')
 	            ->join('projects_categories', 'projects.id', '=', 'projects_categories.project_id')
@@ -74,18 +74,32 @@ class ProjectController extends BaseController {
 	{
 		if(Input::get('d') != null)
 		{
-			$projects = $this->getProjectQuery()->where('projects.district_id', '=', Input::get('d'))->get();
+			$projects = $this->getProjectQuery()->where('projects.district_id', '=', Input::get('d'))->take(18)->get();
 		}
 		else if(Input::get('ch') != null)
 		{
-			$projects = $this->getProjectQuery()->where('city_hall_id', '=', Input::get('ch'))->get();
+			$projects = $this->getProjectQuery()->where('city_hall_id', '=', Input::get('ch'))->take(18)->get();
 		}
 		else
 		{
-			$projects = $this->getProjectQuery()->get();
+			$projects = $this->getProjectQuery()->take(18)->get();
 		}
 
-		var_dump($projects);
+		return View::make('projects.list')->with('projects', $projects);
+
+		// var_dump($projects);
 	}
 
 }
+
+// public 'title' => string 'Nombre de la propuesta' (length=22)
+//       public 'problem' => string 'Este es el problema' (length=19)
+//       public 'solution' => string 'Esta es la soluciÃ³n' (length=20)
+//       public 'cost' => null
+//       public 'beneficiaries' => string 'Estos son los beneficiarios' (length=27)
+//       public 'city_hall' => string 'CuauhtÃ©moc' (length=11)
+//       public 'district' => string 'Condesa ' (length=8)
+//       public 'category' => string 'Obras y servicios' (length=17)
+//       public 'resource' => string '51417587804.jpg' (length=15)
+//       public 'status' => string 'Propuesta' (length=9)
+//       public 'username' => string 'mau' (length=3)

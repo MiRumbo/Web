@@ -1,10 +1,3 @@
-@extends('layout')
-
-@section('title')
-	<title>Ingreso</title>
-@stop
-
-@section('content')
 <div class="row center">
    <div class="col-md-4 col-md-offset-4">      
       {{ Form::open(array('url' => 'signin', 'id' => 'signinForm')) }}
@@ -20,9 +13,4 @@
          <button type="submit" class="btn btn-default">Ingresar</button>
       {{ Form::close() }}
    </div>
-</div>    
-@stop
-
-@section('scripts')
-	{{ HTML::script('js/users.js') }}
-@stop
+</div>

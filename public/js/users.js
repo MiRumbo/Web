@@ -1,6 +1,6 @@
 retrieveDistricts('#inputCityHall', '#inputDistrict');
 
-$('#signinForm').submit(function() {
+$('#login #signinForm').submit(function() {
 	event.preventDefault();
 	// Validate data
 	var user = validateSigninForm();
@@ -17,7 +17,7 @@ $('#signinForm').submit(function() {
 	}
 });
 
-$('#signupForm').submit(function() {
+$('#signup #signupForm').submit(function() {
 	event.preventDefault();
 	// Validate data
 	var user = validateSignupForm();
@@ -35,14 +35,14 @@ $('#signupForm').submit(function() {
 });
 
 function validateSigninForm() {
-    var email = $('#inputEmail').val();
-    var password = $('#inputPassword').val();
+    var email = $('#login #inputEmail').val();
+    var password = $('#login #inputPassword').val();
 
     if (!validateEmail(email)) {
         alert('Invalid email');
         return null;
     }
-    if (!validatePassword(password)) {
+    if (password.length < 1) {
         alert('Invalid password. Min 8 characters');
         return null;
     }
@@ -58,8 +58,8 @@ function validateSigninForm() {
 function validateSignupForm() {
 	var name = $('#inputName').val();
 	var username = $('#inputUsername').val();
-    var email = $('#inputEmail').val();
-    var password = $('#inputPassword').val();
+    var email = $('#signup #inputEmail').val();
+    var password = $('#signup #inputPassword').val();
     var idDistrict = $('#inputDistrict').val();
 
     if (!validateName(name)) {
@@ -110,7 +110,7 @@ function validateUsername(username) {
 };
 
 function validatePassword(password) {
-    if (password.length < 8) return false;
+    if (password.length < 1) return false;
     var repeatedPassword = $('#inputConfirmPassword').length > 0 ?
         $('#inputConfirmPassword').val() : password
     return password == repeatedPassword;
