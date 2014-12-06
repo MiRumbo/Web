@@ -7,7 +7,8 @@
 @section('content')
 <div class="rumbo-mejora {{ $project->status }}">
 	<div class="container">
-	<div id="title-project" class="{{ $project->category }} col-sm-8"> 
+	<div id="title-project" class="{{ $project->category }} col-sm-8">
+		<i class="icons icon-equipamiento"></i> 
 		<h2>{{ $project->title }}</h2>
 		<span class="local-project">{{ trim($project->district) . ', ' . $project->city_hall}}</span>
 	</div><!-- #title-project -->
@@ -40,7 +41,8 @@
 </div>
 <div class="col-sm-3 col-sm-offset-1">
 	<h3>CREADO POR:</h3>
-	<p>{{ $project->username }}</p>
+	<p><img class="avatar" src="http://www.gravatar.com/avatar/{{  md5( $project->email ) }}?s=100&d=http%3A%2F%2Fmirumbo.org%2Fimages%2Favatar.png" />
+	{{ $project->username }}</p>
 	<h3>RUBRO:</h3>
 	<p>{{ $project->category }}</p>
 	<h3>ESTATUS:</h3>
