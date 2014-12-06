@@ -8,15 +8,19 @@
 <div class="rumbo-rumberos">
 	<div class="container">
 		<h2>PROYECTOS</h2>
+        @if ($city_hall != null)
+            <h3>Del. {{ $city_hall }}@if ($district != null), Col. {{ $district }}</h3>
+            @else
+                </h3>
+            @endif
+        @endif        
         @foreach($projects as $project)
         <div class="col-lg-4 item-proyecto">
             @if ($project->resource != null)
                 {{ HTML::image('projects_media/photos/' . $project->resource, 'Foto del proyecto', array('class' => 'thumb-proyecto')) }}
             @else
                 {{ HTML::image('projects_media/photos/default.png', 'Foto del proyecto', array('class' => 'thumb-proyecto')) }}
-            @endif  
-            
-            <!-- <img class="thumb-proyecto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Foto de mi parquecito"> -->
+            @endif          
             <h3>{{ $project->title }}</h3>
 		    <div class="content-proyecto">
         	   <p><b>Problema: </b>{{ $project->problem }}</p>

@@ -72,12 +72,19 @@ class ProjectController extends BaseController {
 
 	public function getProjectsView()
 	{
+		$city_hall = null;
+		$district = null;
 		if(Input::get('d') != null)
 		{
+			$district_result = District::find(Input::get('d'));
+			$district = $district_result != null ? $district_result->district : null;
+			$city_hall = $district != null ? CityHall::find($district_result->city_hall_id)->city_hall : null;
 			$projects = $this->getProjectQuery()->where('projects.district_id', '=', Input::get('d'))->take(18)->get();
 		}
 		else if(Input::get('ch') != null)
 		{
+			$city_hall_result = CityHall::find(Input::get('ch'));
+			$city_hall = $city_hall_result != null ? $city_hall_result->city_hall : null;
 			$projects = $this->getProjectQuery()->where('city_hall_id', '=', Input::get('ch'))->take(18)->get();
 		}
 		else
@@ -85,21 +92,10 @@ class ProjectController extends BaseController {
 			$projects = $this->getProjectQuery()->take(18)->get();
 		}
 
-		return View::make('projects.list')->with('projects', $projects);
-
-		// var_dump($projects);
+		return View::make('projects.list')
+					->with('projects', $projects)
+					->with('city_hall', $city_hall)
+					->with('district', $district);
 	}
 
 }
-
-// public 'title' => string 'Nombre de la propuesta' (length=22)
-//       public 'problem' => string 'Este es el problema' (length=19)
-//       public 'solution' => string 'Esta es la soluciÃ³n' (length=20)
-//       public 'cost' => null
-//       public 'beneficiaries' => string 'Estos son los beneficiarios' (length=27)
-//       public 'city_hall' => string 'CuauhtÃ©moc' (length=11)
-//       public 'district' => string 'Condesa ' (length=8)
-//       public 'category' => string 'Obras y servicios' (length=17)
-//       public 'resource' => string '51417587804.jpg' (length=15)
-//       public 'status' => string 'Propuesta' (length=9)
-//       public 'username' => string 'mau' (length=3)
