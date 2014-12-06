@@ -131,7 +131,7 @@
 		    
 		   <div class="tab">
 		       <input value="1" type="radio" id="tab-1" name="tab-group-1">
-		       <label for="tab-1" class="icons icon-obras">Obras y servicios</label>
+		       <label for="tab-1" class="icons icon-category-1">Obras y servicios</label>
 		       <div class="content-rumbear content-obras">
 			Obras y servicios
 		       </div> 
@@ -139,7 +139,7 @@
 		    
 		   <div class="tab">
 		       <input value="2" type="radio" id="tab-2" name="tab-group-1">
-		       <label for="tab-2" class="icons icon-equipamiento">Equipamiento</label>
+		       <label for="tab-2" class="icons icon-category-2">Equipamiento</label>
 		       <div class="content-rumbear content-equipamiento">
 		           Equipamiento
 		       </div> 
@@ -147,7 +147,7 @@
 		    
 		    <div class="tab">
 		       <input value="3" type="radio" id="tab-3" name="tab-group-1">
-		       <label for="tab-3" class="icons icon-infraestructura">Infraestructura Urbana</label>
+		       <label for="tab-3" class="icons icon-category-3">Infraestructura Urbana</label>
 		       <div class="content-rumbear content-infraestructura">
 		           Infraestructura Urbana
 		       </div> 
@@ -155,7 +155,7 @@
 		
 		    <div class="tab">
 		       <input value="4" type="radio" id="tab-4" name="tab-group-1">
-		       <label for="tab-4" class="icons icon-prevencion">Prevención del delito</label>
+		       <label for="tab-4" class="icons icon-category-4">Prevención del delito</label>
 		       <div class="content-rumbear content-prevencion">
 		           Prevención del delito
 		       </div>
@@ -163,7 +163,7 @@
 		
 		    <div class="tab">
 		       <input value="5" type="radio" id="tab-5" name="tab-group-1">
-		       <label for="tab-5" class="icons icon-actividades">Actividades recreativas, deportivas y culturales</label>
+		       <label for="tab-5" class="icons icon-category-5">Actividades recreativas, deportivas y culturales</label>
 		       <div class="content-rumbear content-actividades">
 		           Actividades recreativas, deportivas y culturales
 		       </div>
@@ -191,7 +191,7 @@
         	  <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
         	  <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
 		  <div class="status-proyecto">
-			<a href="/proyecto/14"><i class="icons icon-obras"></i>¡COMPLETADO!</a>
+			<a href="/proyecto/14"><i class="icons icon-category-1"></i>¡COMPLETADO!</a>
 		  </div>
         	</div>
 	</div><!-- /.col-lg-4 -->
@@ -203,7 +203,7 @@
         	  <p class="author"><a href="#profie-author">Por: Marcela Brasil</a></p>
         	  <p class="local">Del. Azcapotzalco</p>
 		  <div class="status-proyecto">
-			<a href="/proyecto/14"><i class="icons icon-obras"></i>¡COMPLETADO!</a>
+			<a href="/proyecto/14"><i class="icons icon-category-1"></i>¡COMPLETADO!</a>
 		  </div>
 		</div>
         </div><!-- /.col-lg-4 -->
@@ -215,7 +215,7 @@
         	  <p class="author"><a href="#profie-author">Por: Joel Rodríguez</a></p>
         	  <p class="local">Del. Miguel Hidalgo - Col. Polanco</p>
 		  <div class="status-proyecto">
-			<a href="/proyecto/14"><i class="icons icon-equipamiento"></i>¡COMPLETADO!</a>
+			<a href="/proyecto/14"><i class="icons icon-category-2"></i>¡COMPLETADO!</a>
 		  </div>
         	</div>
 	</div><!-- /.col-lg-4 -->
