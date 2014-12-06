@@ -317,6 +317,10 @@ footer a:hover,
 .Propuesta #title-project { background: #e56522; }
 #title-project h2 { font-size: 1.5em; color: #FFF; }
 
+.avatar {
+	border-radius: 5em;
+	border: 2px solid #545454;
+}
 
 /* Rumbo Page styes */
 
