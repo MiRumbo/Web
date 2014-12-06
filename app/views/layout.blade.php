@@ -23,7 +23,7 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-user navbar-right">
 						@if (Auth::check())
-							<li><a href="#">{{ Auth::user()->name }}</a></li>
+							<li><a href="#">{{ Auth::user()->name }}</a><a href="/logout" id="logout" alt="Logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
 						@else
 							<li><a href="/signup">Login / Registrame</a></li>
 						@endif            
@@ -75,7 +75,7 @@
 				 <li>Correos</li>
 				 <li>Medios</li>
 				 <li>Gobierno</li>
-				 <li>Blog</li>
+				 <li><a href="/blog">Blog</a></li>
 				</ul>
 				</div><!-- #footer-contacto -->
 				<div id="footer-social" class="col-xs-4 col-lg-3">

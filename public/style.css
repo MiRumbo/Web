@@ -40,6 +40,12 @@ h1, h2, h3, h4 {
 	display: block;
 }
 
+#logout {
+	position: absolute;
+	right: -40px;
+	top: 5px;
+}
+
 #logo-footer,
 nav.navbar-fixed-top #logo-mirumbo {
 	background: url('images/icons.png') 0px 5px no-repeat;
@@ -306,6 +312,11 @@ footer a,
 .status-proyecto a { color: #FFF; text-decoration: none; }
 footer a:hover,
 .status-proyecto a:hover { color: rgba(245, 251, 160, 1); }
+
+#page-project { background: #FFF; }
+.Propuesta #title-project { background: #e56522; }
+#title-project h2 { font-size: 1.5em; color: #FFF; }
+
 
 /* Rumbo Page styes */
 

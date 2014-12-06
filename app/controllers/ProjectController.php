@@ -52,7 +52,7 @@ class ProjectController extends BaseController {
 	{
 		$query = DB::table('projects')
 				->select('title', 'problem', 'solution', 'cost', 'beneficiaries', 'city_hall', 'category_id',
-					'district', 'category', 'resource', 'status', 'username', 'name')
+					'district', 'category', 'resource', 'status', 'username', 'email', 'name')
 				->join('districts', 'districts.id', '=', 'district_id')
 				->join('city_halls', 'city_halls.id', '=', 'city_hall_id')
 	            ->join('projects_categories', 'projects.id', '=', 'projects_categories.project_id')
