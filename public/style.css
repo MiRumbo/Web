@@ -40,6 +40,12 @@ h1, h2, h3, h4 {
 	display: block;
 }
 
+#logout {
+	position: absolute;
+	right: -40px;
+	top: 5px;
+}
+
 #logo-footer,
 nav.navbar-fixed-top #logo-mirumbo {
 	background: url('images/icons.png') 0px 5px no-repeat;
